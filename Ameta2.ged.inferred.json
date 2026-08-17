@@ -1,0 +1,2637 @@
+[
+{
+"source": "ii0040",
+"target": "ii0042",
+"type": "isMotherOf"
+},
+{
+"source": "ii0040",
+"target": "ii0018",
+"type": "isWifeOf"
+},
+{
+"source": "ii0040",
+"target": "ii0041",
+"type": "isMotherOf"
+},
+{
+"source": "ii0040",
+"target": "Madhavi Ameta",
+"type": "label"
+},
+{
+"source": "ii0007",
+"target": "ii0003",
+"type": "isAuntOf"
+},
+{
+"source": "ii0007",
+"target": "ii0002",
+"type": "isAuntOf"
+},
+{
+"source": "ii0007",
+"target": "ii0020",
+"type": "isWifeOf"
+},
+{
+"source": "ii0007",
+"target": "Jyoti Ameta",
+"type": "label"
+},
+{
+"source": "ii0041",
+"target": "ii0016",
+"type": "hasUncle"
+},
+{
+"source": "ii0041",
+"target": "ii0030",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0041",
+"target": "ii0042",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0041",
+"target": "ii0015",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0041",
+"target": "ii0000",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0041",
+"target": "ii0034",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0041",
+"target": "ii0039",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0041",
+"target": "ii0006",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0041",
+"target": "ii0017",
+"type": "hasUncle"
+},
+{
+"source": "ii0041",
+"target": "ii0014",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0041",
+"target": "ii0041",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0041",
+"target": "ii0005",
+"type": "hasAunt"
+},
+{
+"source": "ii0041",
+"target": "Sagarika Ameta",
+"type": "label"
+},
+{
+"source": "ii0013",
+"target": "ii0028",
+"type": "isFatherOf"
+},
+{
+"source": "ii0013",
+"target": "ii0025",
+"type": "isUncleOf"
+},
+{
+"source": "ii0013",
+"target": "ii0029",
+"type": "isFatherOf"
+},
+{
+"source": "ii0013",
+"target": "ii0000",
+"type": "isUncleOf"
+},
+{
+"source": "ii0013",
+"target": "ii0002",
+"type": "isGreatUncleOf"
+},
+{
+"source": "ii0013",
+"target": "ii0003",
+"type": "isGreatUncleOf"
+},
+{
+"source": "ii0013",
+"target": "ii0026",
+"type": "isFatherOf"
+},
+{
+"source": "ii0013",
+"target": "ii0006",
+"type": "isUncleOf"
+},
+{
+"source": "ii0013",
+"target": "ii0024",
+"type": "isUncleOf"
+},
+{
+"source": "ii0013",
+"target": "ii0027",
+"type": "isFatherOf"
+},
+{
+"source": "ii0013",
+"target": "ii0023",
+"type": "isUncleOf"
+},
+{
+"source": "ii0013",
+"target": "Radha Vallabh Vyas",
+"type": "label"
+},
+{
+"source": "ii0014",
+"target": "ii0042",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0014",
+"target": "ii0033",
+"type": "isGreatGrandParentOf"
+},
+{
+"source": "ii0014",
+"target": "ii0034",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0014",
+"target": "ii0017",
+"type": "isFatherOf"
+},
+{
+"source": "ii0014",
+"target": "ii0030",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0014",
+"target": "ii0002",
+"type": "isGreatGrandParentOf"
+},
+{
+"source": "ii0014",
+"target": "ii0036",
+"type": "isGreatGrandParentOf"
+},
+{
+"source": "ii0014",
+"target": "ii0039",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0014",
+"target": "ii0006",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0014",
+"target": "ii0000",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0014",
+"target": "ii0003",
+"type": "isGreatGrandParentOf"
+},
+{
+"source": "ii0014",
+"target": "ii0016",
+"type": "isFatherOf"
+},
+{
+"source": "ii0014",
+"target": "ii0018",
+"type": "isFatherOf"
+},
+{
+"source": "ii0014",
+"target": "ii0005",
+"type": "isFatherOf"
+},
+{
+"source": "ii0014",
+"target": "ii0041",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0014",
+"target": "ii0032",
+"type": "isGreatGrandParentOf"
+},
+{
+"source": "ii0014",
+"target": "Laxmi lal Ameta",
+"type": "label"
+},
+{
+"source": "ii0030",
+"target": "ii0018",
+"type": "hasUncle"
+},
+{
+"source": "ii0030",
+"target": "ii0036",
+"type": "isUncleOf"
+},
+{
+"source": "ii0030",
+"target": "ii0041",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0030",
+"target": "ii0032",
+"type": "isFatherOf"
+},
+{
+"source": "ii0030",
+"target": "ii0017",
+"type": "hasUncle"
+},
+{
+"source": "ii0030",
+"target": "ii0042",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0030",
+"target": "ii0033",
+"type": "isFatherOf"
+},
+{
+"source": "ii0030",
+"target": "ii0015",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0030",
+"target": "ii0005",
+"type": "hasAunt"
+},
+{
+"source": "ii0030",
+"target": "ii0000",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0030",
+"target": "ii0030",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0030",
+"target": "ii0034",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0030",
+"target": "ii0014",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0030",
+"target": "ii0006",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0030",
+"target": "ii0039",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0030",
+"target": "Jayesh Ameta",
+"type": "label"
+},
+{
+"source": "ii0016",
+"target": "ii0003",
+"type": "isGreatUncleOf"
+},
+{
+"source": "ii0016",
+"target": "ii0039",
+"type": "isUncleOf"
+},
+{
+"source": "ii0016",
+"target": "ii0041",
+"type": "isUncleOf"
+},
+{
+"source": "ii0016",
+"target": "ii0036",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0016",
+"target": "ii0002",
+"type": "isGreatUncleOf"
+},
+{
+"source": "ii0016",
+"target": "ii0000",
+"type": "isUncleOf"
+},
+{
+"source": "ii0016",
+"target": "ii0006",
+"type": "isUncleOf"
+},
+{
+"source": "ii0016",
+"target": "ii0033",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0016",
+"target": "ii0042",
+"type": "isUncleOf"
+},
+{
+"source": "ii0016",
+"target": "ii0030",
+"type": "isFatherOf"
+},
+{
+"source": "ii0016",
+"target": "ii0032",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0016",
+"target": "ii0034",
+"type": "isFatherOf"
+},
+{
+"source": "ii0016",
+"target": "Virendra Ameta",
+"type": "label"
+},
+{
+"source": "ii0018",
+"target": "ii0003",
+"type": "isGreatUncleOf"
+},
+{
+"source": "ii0018",
+"target": "ii0030",
+"type": "isUncleOf"
+},
+{
+"source": "ii0018",
+"target": "ii0002",
+"type": "isGreatUncleOf"
+},
+{
+"source": "ii0018",
+"target": "ii0000",
+"type": "isUncleOf"
+},
+{
+"source": "ii0018",
+"target": "ii0036",
+"type": "isGreatUncleOf"
+},
+{
+"source": "ii0018",
+"target": "ii0034",
+"type": "isUncleOf"
+},
+{
+"source": "ii0018",
+"target": "ii0039",
+"type": "isUncleOf"
+},
+{
+"source": "ii0018",
+"target": "ii0006",
+"type": "isUncleOf"
+},
+{
+"source": "ii0018",
+"target": "ii0041",
+"type": "isFatherOf"
+},
+{
+"source": "ii0018",
+"target": "ii0033",
+"type": "isGreatUncleOf"
+},
+{
+"source": "ii0018",
+"target": "ii0042",
+"type": "isFatherOf"
+},
+{
+"source": "ii0018",
+"target": "ii0032",
+"type": "isGreatUncleOf"
+},
+{
+"source": "ii0018",
+"target": "Dilip Ameta",
+"type": "label"
+},
+{
+"source": "ii0020",
+"target": "Himanshu Dwivedi",
+"type": "label"
+},
+{
+"source": "ii0011",
+"target": "ii0026",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0011",
+"target": "ii0002",
+"type": "isGreatGrandParentOf"
+},
+{
+"source": "ii0011",
+"target": "ii0010",
+"type": "isWifeOf"
+},
+{
+"source": "ii0011",
+"target": "ii0028",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0011",
+"target": "ii0004",
+"type": "isMotherOf"
+},
+{
+"source": "ii0011",
+"target": "ii0006",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0011",
+"target": "ii0025",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0011",
+"target": "ii0029",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0011",
+"target": "ii0012",
+"type": "isMotherOf"
+},
+{
+"source": "ii0011",
+"target": "ii0027",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0011",
+"target": "ii0000",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0011",
+"target": "ii0003",
+"type": "isGreatGrandParentOf"
+},
+{
+"source": "ii0011",
+"target": "ii0013",
+"type": "isMotherOf"
+},
+{
+"source": "ii0011",
+"target": "ii0024",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0011",
+"target": "ii0023",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0011",
+"target": "Shanti Devi Vyas",
+"type": "label"
+},
+{
+"source": "ii0008",
+"target": "ii0007",
+"type": "isMotherOf"
+},
+{
+"source": "ii0008",
+"target": "ii0001",
+"type": "isMotherOf"
+},
+{
+"source": "ii0008",
+"target": "ii0002",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0008",
+"target": "ii0003",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0008",
+"target": "ii0009",
+"type": "isWifeOf"
+},
+{
+"source": "ii0008",
+"target": "Manju Ameta",
+"type": "label"
+},
+{
+"source": "ii0036",
+"target": "ii0036",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0036",
+"target": "ii0018",
+"type": "hasGreatUncle"
+},
+{
+"source": "ii0036",
+"target": "ii0033",
+"type": "isSecondCousinOf"
+},
+{
+"source": "ii0036",
+"target": "ii0016",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0036",
+"target": "ii0005",
+"type": "hasGreatAunt"
+},
+{
+"source": "ii0036",
+"target": "ii0002",
+"type": "isSecondCousinOf"
+},
+{
+"source": "ii0036",
+"target": "ii0032",
+"type": "isSecondCousinOf"
+},
+{
+"source": "ii0036",
+"target": "ii0017",
+"type": "hasGreatUncle"
+},
+{
+"source": "ii0036",
+"target": "ii0036",
+"type": "isSecondCousinOf"
+},
+{
+"source": "ii0036",
+"target": "ii0033",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0036",
+"target": "ii0032",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0036",
+"target": "ii0037",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0036",
+"target": "ii0014",
+"type": "hasGreatGrandParent"
+},
+{
+"source": "ii0036",
+"target": "ii0015",
+"type": "hasGreatGrandParent"
+},
+{
+"source": "ii0036",
+"target": "ii0003",
+"type": "isSecondCousinOf"
+},
+{
+"source": "ii0036",
+"target": "ii0030",
+"type": "hasUncle"
+},
+{
+"source": "ii0036",
+"target": "Dhruv Ameta",
+"type": "label"
+},
+{
+"source": "ii0035",
+"target": "ii0034",
+"type": "isWifeOf"
+},
+{
+"source": "ii0035",
+"target": "ii0036",
+"type": "isMotherOf"
+},
+{
+"source": "ii0035",
+"target": "Nidhi Ameta",
+"type": "label"
+},
+{
+"source": "ii0005",
+"target": "ii0006",
+"type": "isMotherOf"
+},
+{
+"source": "ii0005",
+"target": "ii0004",
+"type": "isWifeOf"
+},
+{
+"source": "ii0005",
+"target": "ii0042",
+"type": "isAuntOf"
+},
+{
+"source": "ii0005",
+"target": "ii0000",
+"type": "isMotherOf"
+},
+{
+"source": "ii0005",
+"target": "ii0003",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0005",
+"target": "ii0036",
+"type": "isGreatAuntOf"
+},
+{
+"source": "ii0005",
+"target": "ii0041",
+"type": "isAuntOf"
+},
+{
+"source": "ii0005",
+"target": "ii0032",
+"type": "isGreatAuntOf"
+},
+{
+"source": "ii0005",
+"target": "ii0002",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0005",
+"target": "ii0030",
+"type": "isAuntOf"
+},
+{
+"source": "ii0005",
+"target": "ii0039",
+"type": "isAuntOf"
+},
+{
+"source": "ii0005",
+"target": "ii0033",
+"type": "isGreatAuntOf"
+},
+{
+"source": "ii0005",
+"target": "ii0034",
+"type": "isAuntOf"
+},
+{
+"source": "ii0005",
+"target": "Kusum Ameta",
+"type": "label"
+},
+{
+"source": "ii0026",
+"target": "ii0011",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0026",
+"target": "ii0026",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0026",
+"target": "ii0024",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0026",
+"target": "ii0012",
+"type": "hasUncle"
+},
+{
+"source": "ii0026",
+"target": "ii0027",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0026",
+"target": "ii0006",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0026",
+"target": "ii0028",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0026",
+"target": "ii0000",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0026",
+"target": "ii0025",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0026",
+"target": "ii0029",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0026",
+"target": "ii0010",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0026",
+"target": "ii0004",
+"type": "hasUncle"
+},
+{
+"source": "ii0026",
+"target": "ii0023",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0026",
+"target": "Rohit Vyas",
+"type": "label"
+},
+{
+"source": "ii0037",
+"target": "ii0036",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0037",
+"target": "ii0016",
+"type": "isWifeOf"
+},
+{
+"source": "ii0037",
+"target": "ii0033",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0037",
+"target": "ii0034",
+"type": "isMotherOf"
+},
+{
+"source": "ii0037",
+"target": "ii0030",
+"type": "isMotherOf"
+},
+{
+"source": "ii0037",
+"target": "ii0032",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0037",
+"target": "Shyama Ameta",
+"type": "label"
+},
+{
+"source": "ii0001",
+"target": "ii0000",
+"type": "isWifeOf"
+},
+{
+"source": "ii0001",
+"target": "ii0002",
+"type": "isMotherOf"
+},
+{
+"source": "ii0001",
+"target": "ii0003",
+"type": "isMotherOf"
+},
+{
+"source": "ii0001",
+"target": "Usha Ameta",
+"type": "label"
+},
+{
+"source": "ii0033",
+"target": "ii0014",
+"type": "hasGreatGrandParent"
+},
+{
+"source": "ii0033",
+"target": "ii0037",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0033",
+"target": "ii0036",
+"type": "isSecondCousinOf"
+},
+{
+"source": "ii0033",
+"target": "ii0002",
+"type": "isSecondCousinOf"
+},
+{
+"source": "ii0033",
+"target": "ii0034",
+"type": "hasUncle"
+},
+{
+"source": "ii0033",
+"target": "ii0033",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0033",
+"target": "ii0017",
+"type": "hasGreatUncle"
+},
+{
+"source": "ii0033",
+"target": "ii0036",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0033",
+"target": "ii0032",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0033",
+"target": "ii0005",
+"type": "hasGreatAunt"
+},
+{
+"source": "ii0033",
+"target": "ii0016",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0033",
+"target": "ii0033",
+"type": "isSecondCousinOf"
+},
+{
+"source": "ii0033",
+"target": "ii0032",
+"type": "isSecondCousinOf"
+},
+{
+"source": "ii0033",
+"target": "ii0003",
+"type": "isSecondCousinOf"
+},
+{
+"source": "ii0033",
+"target": "ii0015",
+"type": "hasGreatGrandParent"
+},
+{
+"source": "ii0033",
+"target": "ii0018",
+"type": "hasGreatUncle"
+},
+{
+"source": "ii0033",
+"target": "Aarjav Ameta",
+"type": "label"
+},
+{
+"source": "ii0039",
+"target": "ii0030",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0039",
+"target": "ii0000",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0039",
+"target": "ii0015",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0039",
+"target": "ii0042",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0039",
+"target": "ii0016",
+"type": "hasUncle"
+},
+{
+"source": "ii0039",
+"target": "ii0018",
+"type": "hasUncle"
+},
+{
+"source": "ii0039",
+"target": "ii0041",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0039",
+"target": "ii0014",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0039",
+"target": "ii0005",
+"type": "hasAunt"
+},
+{
+"source": "ii0039",
+"target": "ii0039",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0039",
+"target": "ii0006",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0039",
+"target": "ii0034",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0039",
+"target": "Varun Ameta",
+"type": "label"
+},
+{
+"source": "ii0009",
+"target": "ii0003",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0009",
+"target": "ii0002",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0009",
+"target": "ii0001",
+"type": "isFatherOf"
+},
+{
+"source": "ii0009",
+"target": "ii0007",
+"type": "isFatherOf"
+},
+{
+"source": "ii0009",
+"target": "Bharat Raj Ameta",
+"type": "label"
+},
+{
+"source": "ii0021",
+"target": "ii0012",
+"type": "isWifeOf"
+},
+{
+"source": "ii0021",
+"target": "ii0023",
+"type": "isMotherOf"
+},
+{
+"source": "ii0021",
+"target": "ii0024",
+"type": "isMotherOf"
+},
+{
+"source": "ii0021",
+"target": "ii0025",
+"type": "isMotherOf"
+},
+{
+"source": "ii0021",
+"target": "Pushpa Vyas",
+"type": "label"
+},
+{
+"source": "ii0006",
+"target": "ii0042",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0006",
+"target": "ii0015",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0006",
+"target": "ii0026",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0006",
+"target": "ii0041",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0006",
+"target": "ii0027",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0006",
+"target": "ii0023",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0006",
+"target": "ii0018",
+"type": "hasUncle"
+},
+{
+"source": "ii0006",
+"target": "ii0016",
+"type": "hasUncle"
+},
+{
+"source": "ii0006",
+"target": "ii0003",
+"type": "isUncleOf"
+},
+{
+"source": "ii0006",
+"target": "ii0002",
+"type": "isUncleOf"
+},
+{
+"source": "ii0006",
+"target": "ii0000",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0006",
+"target": "ii0030",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0006",
+"target": "ii0011",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0006",
+"target": "ii0013",
+"type": "hasUncle"
+},
+{
+"source": "ii0006",
+"target": "ii0039",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0006",
+"target": "ii0028",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0006",
+"target": "ii0006",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0006",
+"target": "ii0034",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0006",
+"target": "ii0017",
+"type": "hasUncle"
+},
+{
+"source": "ii0006",
+"target": "ii0014",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0006",
+"target": "ii0012",
+"type": "hasUncle"
+},
+{
+"source": "ii0006",
+"target": "ii0025",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0006",
+"target": "ii0029",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0006",
+"target": "ii0024",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0006",
+"target": "ii0010",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0006",
+"target": "Prateek Ameta",
+"type": "label"
+},
+{
+"source": "ii0027",
+"target": "ii0004",
+"type": "hasUncle"
+},
+{
+"source": "ii0027",
+"target": "ii0012",
+"type": "hasUncle"
+},
+{
+"source": "ii0027",
+"target": "ii0026",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0027",
+"target": "ii0010",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0027",
+"target": "ii0023",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0027",
+"target": "ii0027",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0027",
+"target": "ii0025",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0027",
+"target": "ii0029",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0027",
+"target": "ii0011",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0027",
+"target": "ii0024",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0027",
+"target": "ii0000",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0027",
+"target": "ii0006",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0027",
+"target": "ii0028",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0027",
+"target": "Gayatri Vyas",
+"type": "label"
+},
+{
+"source": "ii0003",
+"target": "ii0007",
+"type": "hasAunt"
+},
+{
+"source": "ii0003",
+"target": "ii0015",
+"type": "hasGreatGrandParent"
+},
+{
+"source": "ii0003",
+"target": "ii0003",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0003",
+"target": "ii0032",
+"type": "isSecondCousinOf"
+},
+{
+"source": "ii0003",
+"target": "ii0008",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0003",
+"target": "ii0016",
+"type": "hasGreatUncle"
+},
+{
+"source": "ii0003",
+"target": "ii0014",
+"type": "hasGreatGrandParent"
+},
+{
+"source": "ii0003",
+"target": "ii0002",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0003",
+"target": "ii0011",
+"type": "hasGreatGrandParent"
+},
+{
+"source": "ii0003",
+"target": "ii0033",
+"type": "isSecondCousinOf"
+},
+{
+"source": "ii0003",
+"target": "ii0013",
+"type": "hasGreatUncle"
+},
+{
+"source": "ii0003",
+"target": "ii0006",
+"type": "hasUncle"
+},
+{
+"source": "ii0003",
+"target": "ii0012",
+"type": "hasGreatUncle"
+},
+{
+"source": "ii0003",
+"target": "ii0005",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0003",
+"target": "ii0017",
+"type": "hasGreatUncle"
+},
+{
+"source": "ii0003",
+"target": "ii0004",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0003",
+"target": "ii0009",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0003",
+"target": "ii0018",
+"type": "hasGreatUncle"
+},
+{
+"source": "ii0003",
+"target": "ii0010",
+"type": "hasGreatGrandParent"
+},
+{
+"source": "ii0003",
+"target": "ii0002",
+"type": "isSecondCousinOf"
+},
+{
+"source": "ii0003",
+"target": "ii0036",
+"type": "isSecondCousinOf"
+},
+{
+"source": "ii0003",
+"target": "ii0003",
+"type": "isSecondCousinOf"
+},
+{
+"source": "ii0003",
+"target": "Yogvit Ameta",
+"type": "label"
+},
+{
+"source": "ii0017",
+"target": "ii0030",
+"type": "isUncleOf"
+},
+{
+"source": "ii0017",
+"target": "ii0034",
+"type": "isUncleOf"
+},
+{
+"source": "ii0017",
+"target": "ii0033",
+"type": "isGreatUncleOf"
+},
+{
+"source": "ii0017",
+"target": "ii0000",
+"type": "isUncleOf"
+},
+{
+"source": "ii0017",
+"target": "ii0039",
+"type": "isFatherOf"
+},
+{
+"source": "ii0017",
+"target": "ii0002",
+"type": "isGreatUncleOf"
+},
+{
+"source": "ii0017",
+"target": "ii0032",
+"type": "isGreatUncleOf"
+},
+{
+"source": "ii0017",
+"target": "ii0006",
+"type": "isUncleOf"
+},
+{
+"source": "ii0017",
+"target": "ii0036",
+"type": "isGreatUncleOf"
+},
+{
+"source": "ii0017",
+"target": "ii0042",
+"type": "isUncleOf"
+},
+{
+"source": "ii0017",
+"target": "ii0003",
+"type": "isGreatUncleOf"
+},
+{
+"source": "ii0017",
+"target": "ii0041",
+"type": "isUncleOf"
+},
+{
+"source": "ii0017",
+"target": "Rajendra Ameta",
+"type": "label"
+},
+{
+"source": "ii0000",
+"target": "ii0014",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0000",
+"target": "ii0000",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0000",
+"target": "ii0028",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0000",
+"target": "ii0027",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0000",
+"target": "ii0025",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0000",
+"target": "ii0029",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0000",
+"target": "ii0017",
+"type": "hasUncle"
+},
+{
+"source": "ii0000",
+"target": "ii0006",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0000",
+"target": "ii0010",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0000",
+"target": "ii0018",
+"type": "hasUncle"
+},
+{
+"source": "ii0000",
+"target": "ii0042",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0000",
+"target": "ii0026",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0000",
+"target": "ii0013",
+"type": "hasUncle"
+},
+{
+"source": "ii0000",
+"target": "ii0023",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0000",
+"target": "ii0039",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0000",
+"target": "ii0012",
+"type": "hasUncle"
+},
+{
+"source": "ii0000",
+"target": "ii0041",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0000",
+"target": "ii0016",
+"type": "hasUncle"
+},
+{
+"source": "ii0000",
+"target": "ii0024",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0000",
+"target": "ii0011",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0000",
+"target": "ii0002",
+"type": "isFatherOf"
+},
+{
+"source": "ii0000",
+"target": "ii0003",
+"type": "isFatherOf"
+},
+{
+"source": "ii0000",
+"target": "ii0030",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0000",
+"target": "ii0034",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0000",
+"target": "ii0015",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0000",
+"target": "Gaurav Ameta",
+"type": "label"
+},
+{
+"source": "ii0022",
+"target": "ii0013",
+"type": "isWifeOf"
+},
+{
+"source": "ii0022",
+"target": "ii0026",
+"type": "isMotherOf"
+},
+{
+"source": "ii0022",
+"target": "ii0027",
+"type": "isMotherOf"
+},
+{
+"source": "ii0022",
+"target": "ii0029",
+"type": "isMotherOf"
+},
+{
+"source": "ii0022",
+"target": "ii0028",
+"type": "isMotherOf"
+},
+{
+"source": "ii0022",
+"target": "Anusuya Vyas",
+"type": "label"
+},
+{
+"source": "ii0015",
+"target": "ii0041",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0015",
+"target": "ii0039",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0015",
+"target": "ii0036",
+"type": "isGreatGrandParentOf"
+},
+{
+"source": "ii0015",
+"target": "ii0033",
+"type": "isGreatGrandParentOf"
+},
+{
+"source": "ii0015",
+"target": "ii0002",
+"type": "isGreatGrandParentOf"
+},
+{
+"source": "ii0015",
+"target": "ii0042",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0015",
+"target": "ii0016",
+"type": "isMotherOf"
+},
+{
+"source": "ii0015",
+"target": "ii0034",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0015",
+"target": "ii0014",
+"type": "isWifeOf"
+},
+{
+"source": "ii0015",
+"target": "ii0003",
+"type": "isGreatGrandParentOf"
+},
+{
+"source": "ii0015",
+"target": "ii0006",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0015",
+"target": "ii0030",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0015",
+"target": "ii0000",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0015",
+"target": "ii0017",
+"type": "isMotherOf"
+},
+{
+"source": "ii0015",
+"target": "ii0018",
+"type": "isMotherOf"
+},
+{
+"source": "ii0015",
+"target": "ii0032",
+"type": "isGreatGrandParentOf"
+},
+{
+"source": "ii0015",
+"target": "ii0005",
+"type": "isMotherOf"
+},
+{
+"source": "ii0015",
+"target": "Sagar Devi Ameta",
+"type": "label"
+},
+{
+"source": "ii0038",
+"target": "ii0039",
+"type": "isMotherOf"
+},
+{
+"source": "ii0038",
+"target": "ii0017",
+"type": "isWifeOf"
+},
+{
+"source": "ii0038",
+"target": "Chandra Ameta",
+"type": "label"
+},
+{
+"source": "ii0012",
+"target": "ii0003",
+"type": "isGreatUncleOf"
+},
+{
+"source": "ii0012",
+"target": "ii0027",
+"type": "isUncleOf"
+},
+{
+"source": "ii0012",
+"target": "ii0025",
+"type": "isFatherOf"
+},
+{
+"source": "ii0012",
+"target": "ii0026",
+"type": "isUncleOf"
+},
+{
+"source": "ii0012",
+"target": "ii0023",
+"type": "isFatherOf"
+},
+{
+"source": "ii0012",
+"target": "ii0029",
+"type": "isUncleOf"
+},
+{
+"source": "ii0012",
+"target": "ii0002",
+"type": "isGreatUncleOf"
+},
+{
+"source": "ii0012",
+"target": "ii0006",
+"type": "isUncleOf"
+},
+{
+"source": "ii0012",
+"target": "ii0028",
+"type": "isUncleOf"
+},
+{
+"source": "ii0012",
+"target": "ii0000",
+"type": "isUncleOf"
+},
+{
+"source": "ii0012",
+"target": "ii0024",
+"type": "isFatherOf"
+},
+{
+"source": "ii0012",
+"target": "Govind Vallabh Vyas",
+"type": "label"
+},
+{
+"source": "ii0028",
+"target": "ii0012",
+"type": "hasUncle"
+},
+{
+"source": "ii0028",
+"target": "ii0023",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0028",
+"target": "ii0004",
+"type": "hasUncle"
+},
+{
+"source": "ii0028",
+"target": "ii0024",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0028",
+"target": "ii0011",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0028",
+"target": "ii0000",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0028",
+"target": "ii0028",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0028",
+"target": "ii0027",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0028",
+"target": "ii0010",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0028",
+"target": "ii0006",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0028",
+"target": "ii0029",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0028",
+"target": "ii0025",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0028",
+"target": "ii0026",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0028",
+"target": "Aena Vyas",
+"type": "label"
+},
+{
+"source": "ii0024",
+"target": "ii0006",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0024",
+"target": "ii0010",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0024",
+"target": "ii0000",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0024",
+"target": "ii0025",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0024",
+"target": "ii0029",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0024",
+"target": "ii0013",
+"type": "hasUncle"
+},
+{
+"source": "ii0024",
+"target": "ii0023",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0024",
+"target": "ii0026",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0024",
+"target": "ii0004",
+"type": "hasUncle"
+},
+{
+"source": "ii0024",
+"target": "ii0024",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0024",
+"target": "ii0011",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0024",
+"target": "ii0028",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0024",
+"target": "ii0027",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0024",
+"target": "Gagan Vyas",
+"type": "label"
+},
+{
+"source": "ii0019",
+"target": "ii0006",
+"type": "isWifeOf"
+},
+{
+"source": "ii0019",
+"target": "Sameera Thangudu Ameta",
+"type": "label"
+},
+{
+"source": "ii0031",
+"target": "ii0030",
+"type": "isWifeOf"
+},
+{
+"source": "ii0031",
+"target": "ii0033",
+"type": "isMotherOf"
+},
+{
+"source": "ii0031",
+"target": "ii0032",
+"type": "isMotherOf"
+},
+{
+"source": "ii0031",
+"target": "Pramita Ameta",
+"type": "label"
+},
+{
+"source": "ii0010",
+"target": "ii0024",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0010",
+"target": "ii0003",
+"type": "isGreatGrandParentOf"
+},
+{
+"source": "ii0010",
+"target": "ii0000",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0010",
+"target": "ii0013",
+"type": "isFatherOf"
+},
+{
+"source": "ii0010",
+"target": "ii0006",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0010",
+"target": "ii0028",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0010",
+"target": "ii0002",
+"type": "isGreatGrandParentOf"
+},
+{
+"source": "ii0010",
+"target": "ii0004",
+"type": "isFatherOf"
+},
+{
+"source": "ii0010",
+"target": "ii0026",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0010",
+"target": "ii0023",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0010",
+"target": "ii0027",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0010",
+"target": "ii0025",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0010",
+"target": "ii0029",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0010",
+"target": "ii0012",
+"type": "isFatherOf"
+},
+{
+"source": "ii0010",
+"target": "Laxmi lal Vyas",
+"type": "label"
+},
+{
+"source": "ii0034",
+"target": "ii0036",
+"type": "isFatherOf"
+},
+{
+"source": "ii0034",
+"target": "ii0039",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0034",
+"target": "ii0034",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0034",
+"target": "ii0006",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0034",
+"target": "ii0030",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0034",
+"target": "ii0015",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0034",
+"target": "ii0000",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0034",
+"target": "ii0042",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0034",
+"target": "ii0014",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0034",
+"target": "ii0033",
+"type": "isUncleOf"
+},
+{
+"source": "ii0034",
+"target": "ii0005",
+"type": "hasAunt"
+},
+{
+"source": "ii0034",
+"target": "ii0041",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0034",
+"target": "ii0032",
+"type": "isUncleOf"
+},
+{
+"source": "ii0034",
+"target": "ii0018",
+"type": "hasUncle"
+},
+{
+"source": "ii0034",
+"target": "ii0017",
+"type": "hasUncle"
+},
+{
+"source": "ii0034",
+"target": "Vijay Ameta",
+"type": "label"
+},
+{
+"source": "ii0023",
+"target": "ii0011",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0023",
+"target": "ii0024",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0023",
+"target": "ii0000",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0023",
+"target": "ii0027",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0023",
+"target": "ii0010",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0023",
+"target": "ii0006",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0023",
+"target": "ii0028",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0023",
+"target": "ii0013",
+"type": "hasUncle"
+},
+{
+"source": "ii0023",
+"target": "ii0004",
+"type": "hasUncle"
+},
+{
+"source": "ii0023",
+"target": "ii0025",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0023",
+"target": "ii0029",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0023",
+"target": "ii0026",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0023",
+"target": "ii0023",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0023",
+"target": "Pawan Vyas",
+"type": "label"
+},
+{
+"source": "ii0025",
+"target": "ii0011",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0025",
+"target": "ii0026",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0025",
+"target": "ii0010",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0025",
+"target": "ii0025",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0025",
+"target": "ii0029",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0025",
+"target": "ii0004",
+"type": "hasUncle"
+},
+{
+"source": "ii0025",
+"target": "ii0006",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0025",
+"target": "ii0013",
+"type": "hasUncle"
+},
+{
+"source": "ii0025",
+"target": "ii0027",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0025",
+"target": "ii0028",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0025",
+"target": "ii0000",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0025",
+"target": "ii0024",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0025",
+"target": "ii0023",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0025",
+"target": "Kshitij Vyas",
+"type": "label"
+},
+{
+"source": "ii0029",
+"target": "ii0011",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0029",
+"target": "ii0026",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0029",
+"target": "ii0012",
+"type": "hasUncle"
+},
+{
+"source": "ii0029",
+"target": "ii0010",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0029",
+"target": "ii0025",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0029",
+"target": "ii0029",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0029",
+"target": "ii0004",
+"type": "hasUncle"
+},
+{
+"source": "ii0029",
+"target": "ii0006",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0029",
+"target": "ii0027",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0029",
+"target": "ii0028",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0029",
+"target": "ii0000",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0029",
+"target": "ii0024",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0029",
+"target": "ii0023",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0029",
+"target": "Piyush Vyas",
+"type": "label"
+},
+{
+"source": "ii0042",
+"target": "ii0016",
+"type": "hasUncle"
+},
+{
+"source": "ii0042",
+"target": "ii0034",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0042",
+"target": "ii0030",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0042",
+"target": "ii0041",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0042",
+"target": "ii0039",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0042",
+"target": "ii0014",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0042",
+"target": "ii0017",
+"type": "hasUncle"
+},
+{
+"source": "ii0042",
+"target": "ii0015",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0042",
+"target": "ii0042",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0042",
+"target": "ii0006",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0042",
+"target": "ii0005",
+"type": "hasAunt"
+},
+{
+"source": "ii0042",
+"target": "ii0000",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0042",
+"target": "Kashyap Ameta",
+"type": "label"
+},
+{
+"source": "ii0004",
+"target": "ii0006",
+"type": "isFatherOf"
+},
+{
+"source": "ii0004",
+"target": "ii0002",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0004",
+"target": "ii0024",
+"type": "isUncleOf"
+},
+{
+"source": "ii0004",
+"target": "ii0026",
+"type": "isUncleOf"
+},
+{
+"source": "ii0004",
+"target": "ii0023",
+"type": "isUncleOf"
+},
+{
+"source": "ii0004",
+"target": "ii0003",
+"type": "isGrandParentOf"
+},
+{
+"source": "ii0004",
+"target": "ii0025",
+"type": "isUncleOf"
+},
+{
+"source": "ii0004",
+"target": "ii0029",
+"type": "isUncleOf"
+},
+{
+"source": "ii0004",
+"target": "ii0000",
+"type": "isFatherOf"
+},
+{
+"source": "ii0004",
+"target": "ii0027",
+"type": "isUncleOf"
+},
+{
+"source": "ii0004",
+"target": "ii0028",
+"type": "isUncleOf"
+},
+{
+"source": "ii0004",
+"target": "Raj Vallabh Ameta",
+"type": "label"
+},
+{
+"source": "ii0032",
+"target": "ii0018",
+"type": "hasGreatUncle"
+},
+{
+"source": "ii0032",
+"target": "ii0034",
+"type": "hasUncle"
+},
+{
+"source": "ii0032",
+"target": "ii0037",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0032",
+"target": "ii0003",
+"type": "isSecondCousinOf"
+},
+{
+"source": "ii0032",
+"target": "ii0015",
+"type": "hasGreatGrandParent"
+},
+{
+"source": "ii0032",
+"target": "ii0033",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0032",
+"target": "ii0017",
+"type": "hasGreatUncle"
+},
+{
+"source": "ii0032",
+"target": "ii0016",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0032",
+"target": "ii0032",
+"type": "isSecondCousinOf"
+},
+{
+"source": "ii0032",
+"target": "ii0032",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0032",
+"target": "ii0005",
+"type": "hasGreatAunt"
+},
+{
+"source": "ii0032",
+"target": "ii0036",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0032",
+"target": "ii0036",
+"type": "isSecondCousinOf"
+},
+{
+"source": "ii0032",
+"target": "ii0002",
+"type": "isSecondCousinOf"
+},
+{
+"source": "ii0032",
+"target": "ii0033",
+"type": "isSecondCousinOf"
+},
+{
+"source": "ii0032",
+"target": "ii0014",
+"type": "hasGreatGrandParent"
+},
+{
+"source": "ii0032",
+"target": "Ekayan Ameta",
+"type": "label"
+},
+{
+"source": "ii0002",
+"target": "ii0011",
+"type": "hasGreatGrandParent"
+},
+{
+"source": "ii0002",
+"target": "ii0012",
+"type": "hasGreatUncle"
+},
+{
+"source": "ii0002",
+"target": "ii0005",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0002",
+"target": "ii0015",
+"type": "hasGreatGrandParent"
+},
+{
+"source": "ii0002",
+"target": "ii0008",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0002",
+"target": "ii0002",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0002",
+"target": "ii0016",
+"type": "hasGreatUncle"
+},
+{
+"source": "ii0002",
+"target": "ii0033",
+"type": "isSecondCousinOf"
+},
+{
+"source": "ii0002",
+"target": "ii0014",
+"type": "hasGreatGrandParent"
+},
+{
+"source": "ii0002",
+"target": "ii0032",
+"type": "isSecondCousinOf"
+},
+{
+"source": "ii0002",
+"target": "ii0004",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0002",
+"target": "ii0036",
+"type": "isSecondCousinOf"
+},
+{
+"source": "ii0002",
+"target": "ii0003",
+"type": "isSecondCousinOf"
+},
+{
+"source": "ii0002",
+"target": "ii0017",
+"type": "hasGreatUncle"
+},
+{
+"source": "ii0002",
+"target": "ii0002",
+"type": "isSecondCousinOf"
+},
+{
+"source": "ii0002",
+"target": "ii0009",
+"type": "hasGrandParent"
+},
+{
+"source": "ii0002",
+"target": "ii0018",
+"type": "hasGreatUncle"
+},
+{
+"source": "ii0002",
+"target": "ii0010",
+"type": "hasGreatGrandParent"
+},
+{
+"source": "ii0002",
+"target": "ii0007",
+"type": "hasAunt"
+},
+{
+"source": "ii0002",
+"target": "ii0003",
+"type": "isFirstCousinOf"
+},
+{
+"source": "ii0002",
+"target": "ii0006",
+"type": "hasUncle"
+},
+{
+"source": "ii0002",
+"target": "ii0013",
+"type": "hasGreatUncle"
+},
+{
+"source": "ii0002",
+"target": "Divyansh Ameta",
+"type": "label"
+}
+]

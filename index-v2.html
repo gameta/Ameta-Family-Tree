@@ -588,7 +588,7 @@ class FamilyLayout {
 
 // Load data and initialize
 async function init() {
-  const response = await fetch('graph-data.json');
+  const response = await fetch('d7k9x2.json');
   const data = await response.json();
   graph = new FamilyGraph(data);
   resolver = new KinshipResolver(KINSHIP_RULES_HI);
