@@ -1188,9 +1188,14 @@ function initZoomPan() {
   svg.addEventListener('touchend', function(e) {
     if (!touchMoved && e.changedTouches.length === 1) {
       const touch = e.changedTouches[0];
-      const el = document.elementFromPoint(touch.clientX, touch.clientY);
-      if (el && el.closest('.node')) {
-        el.closest('.node').dispatchEvent(new MouseEvent('click', { bubbles: true }));
+      let el = document.elementFromPoint(touch.clientX, touch.clientY);
+      while (el && el !== svg) {
+        if (el.classList && el.classList.contains('node')) {
+          const onclick = el.getAttribute('onclick');
+          if (onclick) eval(onclick);
+          break;
+        }
+        el = el.parentElement || el.parentNode;
       }
     }
     isPanning = false;
