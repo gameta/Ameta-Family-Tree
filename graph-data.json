@@ -1,0 +1,2042 @@
+{
+  "nodes": {
+    "ii0000": {
+      "name": "Gaurav Ameta",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0001": {
+      "name": "Usha Ameta",
+      "gender": "F"
+    },
+    "ii0002": {
+      "name": "Divyansh Ameta",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0003": {
+      "name": "Yogvit Ameta",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0004": {
+      "name": "Raj Vallabh Ameta",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0005": {
+      "name": "Kusum Ameta",
+      "gender": "F"
+    },
+    "ii0006": {
+      "name": "Prateek Ameta",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0007": {
+      "name": "Jyoti Ameta",
+      "gender": "F"
+    },
+    "ii0008": {
+      "name": "Manju Ameta",
+      "gender": "F"
+    },
+    "ii0009": {
+      "name": "Bharat Raj Ameta",
+      "gender": "M",
+      "gotra": "Trivedi",
+      "nativeTown": "Dharta"
+    },
+    "ii0010": {
+      "name": "Laxmi lal Vyas",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0011": {
+      "name": "Shanti Devi Vyas",
+      "gender": "F"
+    },
+    "ii0012": {
+      "name": "Govind Vallabh Vyas",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0013": {
+      "name": "Radha Vallabh Vyas",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0014": {
+      "name": "Laxmi lal Ameta",
+      "gender": "M",
+      "gotra": "Kashyap",
+      "nativeTown": "Bagidora",
+      "satiMataTemple": "Kadiya"
+    },
+    "ii0015": {
+      "name": "Sagar Devi Ameta",
+      "gender": "F"
+    },
+    "ii0016": {
+      "name": "Virendra Ameta",
+      "gender": "M",
+      "gotra": "Kashyap",
+      "nativeTown": "Bagidora",
+      "satiMataTemple": "Kadiya"
+    },
+    "ii0017": {
+      "name": "Rajendra Ameta",
+      "gender": "M",
+      "gotra": "Kashyap",
+      "nativeTown": "Bagidora",
+      "satiMataTemple": "Kadiya"
+    },
+    "ii0018": {
+      "name": "Dilip Ameta",
+      "gender": "M",
+      "gotra": "Kashyap",
+      "nativeTown": "Bagidora",
+      "satiMataTemple": "Kadiya"
+    },
+    "ii0019": {
+      "name": "Sameera Thangudu Ameta",
+      "gender": "F"
+    },
+    "ii0020": {
+      "name": "Himanshu Dwivedi",
+      "gender": "M",
+      "gotra": "Dwivedi"
+    },
+    "ii0021": {
+      "name": "Pushpa Vyas",
+      "gender": "F"
+    },
+    "ii0022": {
+      "name": "Anusuya Vyas",
+      "gender": "F"
+    },
+    "ii0023": {
+      "name": "Pawan Vyas",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0024": {
+      "name": "Gagan Vyas",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0025": {
+      "name": "Kshitij Vyas",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0026": {
+      "name": "Rohit Vyas",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0027": {
+      "name": "Gayatri Vyas",
+      "gender": "F"
+    },
+    "ii0028": {
+      "name": "Aena Vyas",
+      "gender": "F"
+    },
+    "ii0029": {
+      "name": "Piyush Vyas",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0030": {
+      "name": "Jayesh Ameta",
+      "gender": "M",
+      "gotra": "Kashyap",
+      "nativeTown": "Bagidora",
+      "satiMataTemple": "Kadiya"
+    },
+    "ii0031": {
+      "name": "Pramita Ameta",
+      "gender": "F"
+    },
+    "ii0032": {
+      "name": "Ekayan Ameta",
+      "gender": "M",
+      "gotra": "Kashyap"
+    },
+    "ii0033": {
+      "name": "Aarjav Ameta",
+      "gender": "M",
+      "gotra": "Kashyap"
+    },
+    "ii0034": {
+      "name": "Vijay Ameta",
+      "gender": "M",
+      "gotra": "Kashyap",
+      "nativeTown": "Bagidora",
+      "satiMataTemple": "Kadiya"
+    },
+    "ii0035": {
+      "name": "Nidhi Ameta",
+      "gender": "F"
+    },
+    "ii0036": {
+      "name": "Dhruv Ameta",
+      "gender": "M",
+      "gotra": "Kashyap"
+    },
+    "ii0037": {
+      "name": "Shyama Ameta",
+      "gender": "F"
+    },
+    "ii0038": {
+      "name": "Chandra Ameta",
+      "gender": "F"
+    },
+    "ii0039": {
+      "name": "Varun Ameta",
+      "gender": "M",
+      "gotra": "Kashyap",
+      "nativeTown": "Bagidora",
+      "satiMataTemple": "Kadiya"
+    },
+    "ii0040": {
+      "name": "Madhavi Ameta",
+      "gender": "F"
+    },
+    "ii0041": {
+      "name": "Sagarika Ameta",
+      "gender": "F"
+    },
+    "ii0042": {
+      "name": "Kashyap Ameta",
+      "gender": "M",
+      "gotra": "Kashyap",
+      "nativeTown": "Bagidora",
+      "satiMataTemple": "Kadiya"
+    },
+    "ii0043": {
+      "name": "RamShankar Ameta",
+      "gender": "M"
+    },
+    "ii0044": {
+      "name": "Chandrabhaga Ameta",
+      "gender": "F"
+    },
+    "ii0045": {
+      "name": "Ganpatlal Ameta",
+      "gender": "M",
+      "gotra": "Trivedi",
+      "nativeTown": "Dharta"
+    },
+    "ii0046": {
+      "name": "Leelavati Ameta",
+      "gender": "F"
+    },
+    "ii0047": {
+      "name": "Kalulal Ameta",
+      "gender": "M"
+    },
+    "ii0048": {
+      "name": "Mangani Devi Ameta",
+      "gender": "F"
+    },
+    "ii0049": {
+      "name": "Gautam Ameta",
+      "gender": "M",
+      "gotra": "Ba"
+    },
+    "ii0050": {
+      "name": "Gehri Bai Ameta",
+      "gender": "F"
+    },
+    "ii0051": {
+      "name": "Lacchi Ram Ameta",
+      "gender": "M",
+      "gotra": "Trivedi",
+      "nativeTown": "Dharta"
+    },
+    "ii0052": {
+      "name": "Kesar Bai Ameta",
+      "gender": "F"
+    },
+    "ii0053": {
+      "name": "Harlal Ameta",
+      "gender": "M",
+      "gotra": "Ameta"
+    },
+    "ii0054": {
+      "name": "Mohani Bai Ameta",
+      "gender": "F"
+    },
+    "ii0055": {
+      "name": "Durga Shankar Ameta",
+      "gender": "M",
+      "gotra": "Kashyap",
+      "nativeTown": "Bagidora",
+      "satiMataTemple": "Kadiya"
+    },
+    "ii0056": {
+      "name": "Jasoda Bai Ameta",
+      "gender": "F"
+    },
+    "ii0057": {
+      "name": "Kalu lal Ameta",
+      "gender": "M",
+      "gotra": "Ameta"
+    },
+    "ii0058": {
+      "name": "Gendi Bai Ameta",
+      "gender": "F"
+    },
+    "ii0059": {
+      "name": "Shree Krishna Pathak",
+      "gender": "M",
+      "gotra": "Kashyap",
+      "nativeTown": "Railmangra"
+    },
+    "ii0060": {
+      "name": "Harivallabh Vyas",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0061": {
+      "name": "Manak bai Vyas",
+      "gender": "F"
+    },
+    "ii0062": {
+      "name": "Shambhu lal Ameta",
+      "gender": "M",
+      "gotra": "Ba"
+    },
+    "ii0063": {
+      "name": "Shyamsundar Ameta",
+      "gender": "M",
+      "gotra": "Ba"
+    },
+    "ii0064": {
+      "name": "leela Devi Ameta",
+      "gender": "F"
+    },
+    "ii0065": {
+      "name": "Bhagwanti Ameta",
+      "gender": "F"
+    },
+    "ii0066": {
+      "name": "Girija Ameta",
+      "gender": "F"
+    },
+    "ii0067": {
+      "name": "Shakuntala Ameta",
+      "gender": "F"
+    },
+    "ii0068": {
+      "name": "Bherulal Ameta",
+      "gender": "M",
+      "gotra": "Ba"
+    },
+    "ii0069": {
+      "name": "Guneshi Devi Vyas",
+      "gender": "F"
+    },
+    "ii0070": {
+      "name": "Lalit Bhatt",
+      "gender": "M",
+      "gotra": "Bhatt"
+    },
+    "ii0071": {
+      "name": "Susheela Ameta",
+      "gender": "F"
+    },
+    "ii0072": {
+      "name": "Suresh Bhatt",
+      "gender": "M",
+      "gotra": "Bhatt"
+    },
+    "ii0073": {
+      "name": "Jamna Bai Pathak",
+      "gender": "F"
+    },
+    "ii0074": {
+      "name": "Gamer Ba",
+      "gender": "M",
+      "gotra": "Ba"
+    },
+    "ii0075": {
+      "name": "Chand Bai",
+      "gender": "F"
+    },
+    "ii0076": {
+      "name": "Suraj Bai",
+      "gender": "F"
+    },
+    "ii0077": {
+      "name": "Tara",
+      "gender": "F"
+    },
+    "ii0078": {
+      "name": "Kusum",
+      "gender": "F"
+    },
+    "ii0079": {
+      "name": "Gopi Bai",
+      "gender": "F"
+    },
+    "ii0080": {
+      "name": "Gajendra",
+      "gender": "M",
+      "gotra": "Ameta"
+    },
+    "ii0081": {
+      "name": "Rambha Bai",
+      "gender": "F"
+    },
+    "ii0082": {
+      "name": "Kasturi Bai",
+      "gender": "F"
+    },
+    "ii0083": {
+      "name": "Sunder Bai",
+      "gender": "F"
+    },
+    "ii0084": {
+      "name": "Chandra Bai Ameta",
+      "gender": "F"
+    },
+    "ii0085": {
+      "name": "Aadhya Dwivedi",
+      "gender": "F"
+    },
+    "ii0086": {
+      "name": "Kirti Vyas",
+      "gender": "F"
+    },
+    "ii0087": {
+      "name": "Yash Vyas",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0088": {
+      "name": "Nikit Vyas",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0089": {
+      "name": "Hemalata Vyas",
+      "gender": "F"
+    },
+    "ii0090": {
+      "name": "Mantavya Vyas",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0091": {
+      "name": "Shrijal Vyas",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0092": {
+      "name": "Manisha Vyas",
+      "gender": "F"
+    },
+    "ii0093": {
+      "name": "Jivika Vyas",
+      "gender": "F"
+    },
+    "ii0094": {
+      "name": "Samarth Vyas",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0095": {
+      "name": "Rekha Vyas",
+      "gender": "F"
+    },
+    "ii0096": {
+      "name": "Jalaj Vyas",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0097": {
+      "name": "Isha Vyas",
+      "gender": "F"
+    },
+    "ii0098": {
+      "name": "Bhavya Vyas",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0099": {
+      "name": "Guddi Bhatt",
+      "gender": "F"
+    },
+    "ii0100": {
+      "name": "Neetu Bhatt",
+      "gender": "F"
+    },
+    "ii0101": {
+      "name": "Vrinda Bhatt",
+      "gender": "F"
+    },
+    "ii0102": {
+      "name": "Ananta Bhatt",
+      "gender": "M",
+      "gotra": "Bhatt"
+    },
+    "ii0103": {
+      "name": "Rajeshwar Bhatt",
+      "gender": "M",
+      "gotra": "Bhatt"
+    },
+    "ii0104": {
+      "name": "Lokesh Bhatt",
+      "gender": "M",
+      "gotra": "Bhatt"
+    },
+    "ii0105": {
+      "name": "Chhaya Bhatt",
+      "gender": "F"
+    },
+    "ii0106": {
+      "name": "Kunal Bhatt",
+      "gender": "M",
+      "gotra": "Bhatt"
+    },
+    "ii0107": {
+      "name": "Nikita Bhatt",
+      "gender": "F"
+    },
+    "ii0108": {
+      "name": "Girdhari lal",
+      "gender": "M",
+      "gotra": "lal"
+    },
+    "ii0109": {
+      "name": "Narbada Bai",
+      "gender": "F"
+    },
+    "ii0110": {
+      "name": "Manohar lal",
+      "gender": "M",
+      "gotra": "lal"
+    },
+    "ii0111": {
+      "name": "Lachmi lal",
+      "gender": "M",
+      "gotra": "lal"
+    },
+    "ii0112": {
+      "name": "Panna Bai",
+      "gender": "F"
+    },
+    "ii0113": {
+      "name": "Narayani Ameta",
+      "gender": "F"
+    },
+    "ii0114": {
+      "name": "Ramchandra Ameta",
+      "gender": "M",
+      "gotra": "Kashyap",
+      "nativeTown": "Bagidora",
+      "satiMataTemple": "Kadiya"
+    },
+    "ii0115": {
+      "name": "HetShankar Ameta",
+      "gender": "M",
+      "gotra": "Kashyap",
+      "nativeTown": "Bagidora",
+      "satiMataTemple": "Kadiya"
+    },
+    "ii0116": {
+      "name": "Vasanti Bai Ameta",
+      "gender": "F"
+    },
+    "ii0117": {
+      "name": "Gekya Bai Ameta",
+      "gender": "F"
+    },
+    "ii0118": {
+      "name": "Krishnakant",
+      "gender": "M"
+    },
+    "ii0119": {
+      "name": "Ramakant",
+      "gender": "M"
+    },
+    "ii0120": {
+      "name": "Satyakant",
+      "gender": "M"
+    },
+    "ii0121": {
+      "name": "Nirmla Ameta",
+      "gender": "F"
+    },
+    "ii0122": {
+      "name": "Gangadhar",
+      "gender": "M"
+    },
+    "ii0123": {
+      "name": "Modiram",
+      "gender": "M"
+    },
+    "ii0124": {
+      "name": "Jamnashankar",
+      "gender": "M"
+    },
+    "ii0125": {
+      "name": "Jagganath",
+      "gender": "M"
+    },
+    "ii0126": {
+      "name": "Shivnarayan Ameta",
+      "gender": "M",
+      "gotra": "Ameta"
+    },
+    "ii0127": {
+      "name": "Giriraj Ameta",
+      "gender": "M",
+      "gotra": "Ameta"
+    },
+    "ii0128": {
+      "name": "Leela Devi",
+      "gender": "F"
+    },
+    "ii0129": {
+      "name": "Rewa Shankar Joshi",
+      "gender": "M",
+      "gotra": "Joshi"
+    },
+    "ii0130": {
+      "name": "Mohanlal Ameta",
+      "gender": "M",
+      "gotra": "Ameta"
+    },
+    "ii0131": {
+      "name": "Kashi Bai Ameta",
+      "gender": "F"
+    },
+    "ii0132": {
+      "name": "Panna lal Ameta",
+      "gender": "M",
+      "gotra": "Ameta"
+    },
+    "ii0200": {
+      "name": "Hemraj Ameta",
+      "gender": "M",
+      "gotra": "Kashyap",
+      "nativeTown": "Bagidora",
+      "satiMataTemple": "Kadiya"
+    },
+    "ii0201": {
+      "name": "Ambalal Ameta",
+      "gender": "M",
+      "gotra": "Kashyap",
+      "nativeTown": "Bagidora",
+      "satiMataTemple": "Kadiya"
+    },
+    "ii0202": {
+      "name": "Wife 1 of Durgashankar",
+      "gender": "F"
+    },
+    "ii0203": {
+      "name": "Vyas Patriarch",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0204": {
+      "name": "Neelkanth Vyas",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0205": {
+      "name": "Bhagwantilal Vyas",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0206": {
+      "name": "Mukutlal Vyas",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0207": {
+      "name": "Pannalal Vyas",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0208": {
+      "name": "Bhagwanti Bai Vyas",
+      "gender": "F"
+    },
+    "ii0209": {
+      "name": "Gopal Vallabh Vyas",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0210": {
+      "name": "Jai Vallabh Vyas",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0211": {
+      "name": "Shiv Vallabh Vyas",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0212": {
+      "name": "Susheela Bai Vyas",
+      "gender": "F"
+    },
+    "ii0213": {
+      "name": "Suresh Vyas",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0214": {
+      "name": "Mahesh Vyas",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0215": {
+      "name": "Snehlata Vyas",
+      "gender": "F"
+    },
+    "ii0216": {
+      "name": "Swarnalata Vyas",
+      "gender": "F"
+    },
+    "ii0217": {
+      "name": "Rajnilata Vyas",
+      "gender": "F"
+    },
+    "ii0218": {
+      "name": "Durgashankar Vyas",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0219": {
+      "name": "Sunderlal Vyas",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0220": {
+      "name": "Bharat Vyas",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0221": {
+      "name": "Sonu Vyas",
+      "gender": "M",
+      "gotra": "Vatsa",
+      "nativeTown": "Navania",
+      "satiMataTemple": "Phachar"
+    },
+    "ii0222": {
+      "name": "Neera Vyas",
+      "gender": "F"
+    },
+    "ii0223": {
+      "name": "Jasoda Bai Vyas",
+      "gender": "F"
+    },
+    "ii0224": {
+      "name": "Ambalal Pathak",
+      "gender": "M",
+      "gotra": "Kashyap",
+      "nativeTown": "Railmangra"
+    },
+    "ii0225": {
+      "name": "Jasoda Bai Pathak",
+      "gender": "F"
+    },
+    "ii0300": {
+      "name": "Pati Ji Pathak",
+      "gender": "M",
+      "gotra": "Kashyap",
+      "notes": "Arrived in Mewar circa 1300 V.S. (~1243 AD). Earliest known ancestor of Kashyap Gotra Pathak line."
+    },
+    "ii0301": {
+      "name": "Lakshmi Das Ji Pathak",
+      "gender": "M",
+      "gotra": "Kashyap",
+      "notes": "7th generation descendant of Pati Ji Pathak. Generations in between unknown."
+    },
+    "ii0302": {
+      "name": "Hari Har Ji Pathak",
+      "gender": "M",
+      "gotra": "Kashyap",
+      "notes": "Son of Lakshmi Das Ji. Accomplished in Vedas, ritual practices, tantra, and philosophy. 7 generations gap to Ambalal Pathak."
+    }
+  },
+  "edges": [
+    {
+      "source": "ii0000",
+      "type": "isFatherOf",
+      "target": "ii0003"
+    },
+    {
+      "source": "ii0000",
+      "type": "isFatherOf",
+      "target": "ii0002"
+    },
+    {
+      "source": "ii0123",
+      "type": "isFatherOf",
+      "target": "ii0125"
+    },
+    {
+      "source": "ii0123",
+      "type": "isFatherOf",
+      "target": "ii0124"
+    },
+    {
+      "source": "ii0018",
+      "type": "isFatherOf",
+      "target": "ii0041"
+    },
+    {
+      "source": "ii0018",
+      "type": "isFatherOf",
+      "target": "ii0042"
+    },
+    {
+      "source": "ii0053",
+      "type": "isFatherOf",
+      "target": "ii0046"
+    },
+    {
+      "source": "ii0059",
+      "type": "isFatherOf",
+      "target": "ii0011"
+    },
+    {
+      "source": "ii0014",
+      "type": "isFatherOf",
+      "target": "ii0018"
+    },
+    {
+      "source": "ii0014",
+      "type": "isFatherOf",
+      "target": "ii0005"
+    },
+    {
+      "source": "ii0014",
+      "type": "isFatherOf",
+      "target": "ii0017"
+    },
+    {
+      "source": "ii0014",
+      "type": "isFatherOf",
+      "target": "ii0016"
+    },
+    {
+      "source": "ii0072",
+      "type": "isFatherOf",
+      "target": "ii0106"
+    },
+    {
+      "source": "ii0072",
+      "type": "isFatherOf",
+      "target": "ii0104"
+    },
+    {
+      "source": "ii0072",
+      "type": "isFatherOf",
+      "target": "ii0105"
+    },
+    {
+      "source": "ii0017",
+      "type": "isFatherOf",
+      "target": "ii0039"
+    },
+    {
+      "source": "ii0029",
+      "type": "isFatherOf",
+      "target": "ii0096"
+    },
+    {
+      "source": "ii0127",
+      "type": "isFatherOf",
+      "target": "ii0021"
+    },
+    {
+      "source": "ii0122",
+      "type": "isFatherOf",
+      "target": "ii0047"
+    },
+    {
+      "source": "ii0122",
+      "type": "isFatherOf",
+      "target": "ii0123"
+    },
+    {
+      "source": "ii0049",
+      "type": "isFatherOf",
+      "target": "ii0044"
+    },
+    {
+      "source": "ii0049",
+      "type": "isFatherOf",
+      "target": "ii0063"
+    },
+    {
+      "source": "ii0049",
+      "type": "isFatherOf",
+      "target": "ii0068"
+    },
+    {
+      "source": "ii0049",
+      "type": "isFatherOf",
+      "target": "ii0064"
+    },
+    {
+      "source": "ii0049",
+      "type": "isFatherOf",
+      "target": "ii0067"
+    },
+    {
+      "source": "ii0049",
+      "type": "isFatherOf",
+      "target": "ii0065"
+    },
+    {
+      "source": "ii0049",
+      "type": "isFatherOf",
+      "target": "ii0066"
+    },
+    {
+      "source": "ii0049",
+      "type": "isFatherOf",
+      "target": "ii0062"
+    },
+    {
+      "source": "ii0016",
+      "type": "isFatherOf",
+      "target": "ii0034"
+    },
+    {
+      "source": "ii0016",
+      "type": "isFatherOf",
+      "target": "ii0030"
+    },
+    {
+      "source": "ii0025",
+      "type": "isFatherOf",
+      "target": "ii0088"
+    },
+    {
+      "source": "ii0025",
+      "type": "isFatherOf",
+      "target": "ii0087"
+    },
+    {
+      "source": "ii0024",
+      "type": "isFatherOf",
+      "target": "ii0091"
+    },
+    {
+      "source": "ii0024",
+      "type": "isFatherOf",
+      "target": "ii0090"
+    },
+    {
+      "source": "ii0004",
+      "type": "isFatherOf",
+      "target": "ii0000"
+    },
+    {
+      "source": "ii0004",
+      "type": "isFatherOf",
+      "target": "ii0006"
+    },
+    {
+      "source": "ii0009",
+      "type": "isFatherOf",
+      "target": "ii0001"
+    },
+    {
+      "source": "ii0009",
+      "type": "isFatherOf",
+      "target": "ii0007"
+    },
+    {
+      "source": "ii0074",
+      "type": "isFatherOf",
+      "target": "ii0049"
+    },
+    {
+      "source": "ii0074",
+      "type": "isFatherOf",
+      "target": "ii0076"
+    },
+    {
+      "source": "ii0074",
+      "type": "isFatherOf",
+      "target": "ii0075"
+    },
+    {
+      "source": "ii0023",
+      "type": "isFatherOf",
+      "target": "ii0093"
+    },
+    {
+      "source": "ii0023",
+      "type": "isFatherOf",
+      "target": "ii0094"
+    },
+    {
+      "source": "ii0055",
+      "type": "isFatherOf",
+      "target": "ii0014"
+    },
+    {
+      "source": "ii0055",
+      "type": "isFatherOf",
+      "target": "ii0116"
+    },
+    {
+      "source": "ii0055",
+      "type": "isFatherOf",
+      "target": "ii0117"
+    },
+    {
+      "source": "ii0055",
+      "type": "isFatherOf",
+      "target": "ii0114"
+    },
+    {
+      "source": "ii0055",
+      "type": "isFatherOf",
+      "target": "ii0084"
+    },
+    {
+      "source": "ii0055",
+      "type": "isFatherOf",
+      "target": "ii0113"
+    },
+    {
+      "source": "ii0055",
+      "type": "isFatherOf",
+      "target": "ii0115"
+    },
+    {
+      "source": "ii0012",
+      "type": "isFatherOf",
+      "target": "ii0025"
+    },
+    {
+      "source": "ii0012",
+      "type": "isFatherOf",
+      "target": "ii0024"
+    },
+    {
+      "source": "ii0012",
+      "type": "isFatherOf",
+      "target": "ii0023"
+    },
+    {
+      "source": "ii0111",
+      "type": "isFatherOf",
+      "target": "ii0110"
+    },
+    {
+      "source": "ii0129",
+      "type": "isFatherOf",
+      "target": "ii0128"
+    },
+    {
+      "source": "ii0060",
+      "type": "isFatherOf",
+      "target": "ii0010"
+    },
+    {
+      "source": "ii0013",
+      "type": "isFatherOf",
+      "target": "ii0027"
+    },
+    {
+      "source": "ii0013",
+      "type": "isFatherOf",
+      "target": "ii0028"
+    },
+    {
+      "source": "ii0013",
+      "type": "isFatherOf",
+      "target": "ii0029"
+    },
+    {
+      "source": "ii0013",
+      "type": "isFatherOf",
+      "target": "ii0026"
+    },
+    {
+      "source": "ii0126",
+      "type": "isFatherOf",
+      "target": "ii0078"
+    },
+    {
+      "source": "ii0126",
+      "type": "isFatherOf",
+      "target": "ii0079"
+    },
+    {
+      "source": "ii0126",
+      "type": "isFatherOf",
+      "target": "ii0080"
+    },
+    {
+      "source": "ii0126",
+      "type": "isFatherOf",
+      "target": "ii0037"
+    },
+    {
+      "source": "ii0126",
+      "type": "isFatherOf",
+      "target": "ii0077"
+    },
+    {
+      "source": "ii0034",
+      "type": "isFatherOf",
+      "target": "ii0036"
+    },
+    {
+      "source": "ii0026",
+      "type": "isFatherOf",
+      "target": "ii0098"
+    },
+    {
+      "source": "ii0026",
+      "type": "isFatherOf",
+      "target": "ii0097"
+    },
+    {
+      "source": "ii0010",
+      "type": "isFatherOf",
+      "target": "ii0012"
+    },
+    {
+      "source": "ii0010",
+      "type": "isFatherOf",
+      "target": "ii0069"
+    },
+    {
+      "source": "ii0010",
+      "type": "isFatherOf",
+      "target": "ii0004"
+    },
+    {
+      "source": "ii0010",
+      "type": "isFatherOf",
+      "target": "ii0013"
+    },
+    {
+      "source": "ii0043",
+      "type": "isFatherOf",
+      "target": "ii0008"
+    },
+    {
+      "source": "ii0020",
+      "type": "isFatherOf",
+      "target": "ii0085"
+    },
+    {
+      "source": "ii0051",
+      "type": "isFatherOf",
+      "target": "ii0045"
+    },
+    {
+      "source": "ii0110",
+      "type": "isFatherOf",
+      "target": "ii0022"
+    },
+    {
+      "source": "ii0030",
+      "type": "isFatherOf",
+      "target": "ii0032"
+    },
+    {
+      "source": "ii0030",
+      "type": "isFatherOf",
+      "target": "ii0033"
+    },
+    {
+      "source": "ii0047",
+      "type": "isFatherOf",
+      "target": "ii0121"
+    },
+    {
+      "source": "ii0047",
+      "type": "isFatherOf",
+      "target": "ii0043"
+    },
+    {
+      "source": "ii0108",
+      "type": "isFatherOf",
+      "target": "ii0109"
+    },
+    {
+      "source": "ii0130",
+      "type": "isFatherOf",
+      "target": "ii0127"
+    },
+    {
+      "source": "ii0045",
+      "type": "isFatherOf",
+      "target": "ii0009"
+    },
+    {
+      "source": "ii0070",
+      "type": "isFatherOf",
+      "target": "ii0101"
+    },
+    {
+      "source": "ii0070",
+      "type": "isFatherOf",
+      "target": "ii0103"
+    },
+    {
+      "source": "ii0070",
+      "type": "isFatherOf",
+      "target": "ii0100"
+    },
+    {
+      "source": "ii0070",
+      "type": "isFatherOf",
+      "target": "ii0102"
+    },
+    {
+      "source": "ii0057",
+      "type": "isFatherOf",
+      "target": "ii0015"
+    },
+    {
+      "source": "ii0117",
+      "type": "isMotherOf",
+      "target": "ii0119"
+    },
+    {
+      "source": "ii0117",
+      "type": "isMotherOf",
+      "target": "ii0118"
+    },
+    {
+      "source": "ii0117",
+      "type": "isMotherOf",
+      "target": "ii0120"
+    },
+    {
+      "source": "ii0035",
+      "type": "isMotherOf",
+      "target": "ii0036"
+    },
+    {
+      "source": "ii0001",
+      "type": "isMotherOf",
+      "target": "ii0003"
+    },
+    {
+      "source": "ii0001",
+      "type": "isMotherOf",
+      "target": "ii0002"
+    },
+    {
+      "source": "ii0086",
+      "type": "isMotherOf",
+      "target": "ii0087"
+    },
+    {
+      "source": "ii0086",
+      "type": "isMotherOf",
+      "target": "ii0088"
+    },
+    {
+      "source": "ii0007",
+      "type": "isMotherOf",
+      "target": "ii0085"
+    },
+    {
+      "source": "ii0052",
+      "type": "isMotherOf",
+      "target": "ii0045"
+    },
+    {
+      "source": "ii0084",
+      "type": "isMotherOf",
+      "target": "ii0109"
+    },
+    {
+      "source": "ii0037",
+      "type": "isMotherOf",
+      "target": "ii0034"
+    },
+    {
+      "source": "ii0037",
+      "type": "isMotherOf",
+      "target": "ii0030"
+    },
+    {
+      "source": "ii0031",
+      "type": "isMotherOf",
+      "target": "ii0032"
+    },
+    {
+      "source": "ii0031",
+      "type": "isMotherOf",
+      "target": "ii0033"
+    },
+    {
+      "source": "ii0048",
+      "type": "isMotherOf",
+      "target": "ii0121"
+    },
+    {
+      "source": "ii0048",
+      "type": "isMotherOf",
+      "target": "ii0043"
+    },
+    {
+      "source": "ii0128",
+      "type": "isMotherOf",
+      "target": "ii0021"
+    },
+    {
+      "source": "ii0073",
+      "type": "isMotherOf",
+      "target": "ii0011"
+    },
+    {
+      "source": "ii0040",
+      "type": "isMotherOf",
+      "target": "ii0042"
+    },
+    {
+      "source": "ii0040",
+      "type": "isMotherOf",
+      "target": "ii0041"
+    },
+    {
+      "source": "ii0044",
+      "type": "isMotherOf",
+      "target": "ii0008"
+    },
+    {
+      "source": "ii0005",
+      "type": "isMotherOf",
+      "target": "ii0006"
+    },
+    {
+      "source": "ii0005",
+      "type": "isMotherOf",
+      "target": "ii0000"
+    },
+    {
+      "source": "ii0095",
+      "type": "isMotherOf",
+      "target": "ii0096"
+    },
+    {
+      "source": "ii0056",
+      "type": "isMotherOf",
+      "target": "ii0115"
+    },
+    {
+      "source": "ii0056",
+      "type": "isMotherOf",
+      "target": "ii0114"
+    },
+    {
+      "source": "ii0056",
+      "type": "isMotherOf",
+      "target": "ii0113"
+    },
+    {
+      "source": "ii0056",
+      "type": "isMotherOf",
+      "target": "ii0014"
+    },
+    {
+      "source": "ii0015",
+      "type": "isMotherOf",
+      "target": "ii0017"
+    },
+    {
+      "source": "ii0015",
+      "type": "isMotherOf",
+      "target": "ii0016"
+    },
+    {
+      "source": "ii0015",
+      "type": "isMotherOf",
+      "target": "ii0018"
+    },
+    {
+      "source": "ii0015",
+      "type": "isMotherOf",
+      "target": "ii0005"
+    },
+    {
+      "source": "ii0112",
+      "type": "isMotherOf",
+      "target": "ii0110"
+    },
+    {
+      "source": "ii0054",
+      "type": "isMotherOf",
+      "target": "ii0046"
+    },
+    {
+      "source": "ii0089",
+      "type": "isMotherOf",
+      "target": "ii0090"
+    },
+    {
+      "source": "ii0089",
+      "type": "isMotherOf",
+      "target": "ii0091"
+    },
+    {
+      "source": "ii0069",
+      "type": "isMotherOf",
+      "target": "ii0070"
+    },
+    {
+      "source": "ii0069",
+      "type": "isMotherOf",
+      "target": "ii0072"
+    },
+    {
+      "source": "ii0069",
+      "type": "isMotherOf",
+      "target": "ii0099"
+    },
+    {
+      "source": "ii0069",
+      "type": "isMotherOf",
+      "target": "ii0071"
+    },
+    {
+      "source": "ii0021",
+      "type": "isMotherOf",
+      "target": "ii0023"
+    },
+    {
+      "source": "ii0021",
+      "type": "isMotherOf",
+      "target": "ii0025"
+    },
+    {
+      "source": "ii0021",
+      "type": "isMotherOf",
+      "target": "ii0024"
+    },
+    {
+      "source": "ii0058",
+      "type": "isMotherOf",
+      "target": "ii0015"
+    },
+    {
+      "source": "ii0050",
+      "type": "isMotherOf",
+      "target": "ii0067"
+    },
+    {
+      "source": "ii0050",
+      "type": "isMotherOf",
+      "target": "ii0064"
+    },
+    {
+      "source": "ii0050",
+      "type": "isMotherOf",
+      "target": "ii0066"
+    },
+    {
+      "source": "ii0050",
+      "type": "isMotherOf",
+      "target": "ii0063"
+    },
+    {
+      "source": "ii0050",
+      "type": "isMotherOf",
+      "target": "ii0068"
+    },
+    {
+      "source": "ii0050",
+      "type": "isMotherOf",
+      "target": "ii0044"
+    },
+    {
+      "source": "ii0050",
+      "type": "isMotherOf",
+      "target": "ii0062"
+    },
+    {
+      "source": "ii0050",
+      "type": "isMotherOf",
+      "target": "ii0065"
+    },
+    {
+      "source": "ii0011",
+      "type": "isMotherOf",
+      "target": "ii0012"
+    },
+    {
+      "source": "ii0011",
+      "type": "isMotherOf",
+      "target": "ii0013"
+    },
+    {
+      "source": "ii0011",
+      "type": "isMotherOf",
+      "target": "ii0004"
+    },
+    {
+      "source": "ii0011",
+      "type": "isMotherOf",
+      "target": "ii0069"
+    },
+    {
+      "source": "ii0131",
+      "type": "isMotherOf",
+      "target": "ii0127"
+    },
+    {
+      "source": "ii0038",
+      "type": "isMotherOf",
+      "target": "ii0039"
+    },
+    {
+      "source": "ii0061",
+      "type": "isMotherOf",
+      "target": "ii0010"
+    },
+    {
+      "source": "ii0076",
+      "type": "isMotherOf",
+      "target": "ii0080"
+    },
+    {
+      "source": "ii0076",
+      "type": "isMotherOf",
+      "target": "ii0079"
+    },
+    {
+      "source": "ii0076",
+      "type": "isMotherOf",
+      "target": "ii0078"
+    },
+    {
+      "source": "ii0076",
+      "type": "isMotherOf",
+      "target": "ii0037"
+    },
+    {
+      "source": "ii0076",
+      "type": "isMotherOf",
+      "target": "ii0077"
+    },
+    {
+      "source": "ii0082",
+      "type": "isMotherOf",
+      "target": "ii0047"
+    },
+    {
+      "source": "ii0092",
+      "type": "isMotherOf",
+      "target": "ii0093"
+    },
+    {
+      "source": "ii0092",
+      "type": "isMotherOf",
+      "target": "ii0094"
+    },
+    {
+      "source": "ii0046",
+      "type": "isMotherOf",
+      "target": "ii0009"
+    },
+    {
+      "source": "ii0008",
+      "type": "isMotherOf",
+      "target": "ii0001"
+    },
+    {
+      "source": "ii0008",
+      "type": "isMotherOf",
+      "target": "ii0007"
+    },
+    {
+      "source": "ii0022",
+      "type": "isMotherOf",
+      "target": "ii0027"
+    },
+    {
+      "source": "ii0022",
+      "type": "isMotherOf",
+      "target": "ii0029"
+    },
+    {
+      "source": "ii0022",
+      "type": "isMotherOf",
+      "target": "ii0026"
+    },
+    {
+      "source": "ii0022",
+      "type": "isMotherOf",
+      "target": "ii0028"
+    },
+    {
+      "source": "ii0109",
+      "type": "isMotherOf",
+      "target": "ii0022"
+    },
+    {
+      "source": "ii0035",
+      "type": "isSpouseOf",
+      "target": "ii0034"
+    },
+    {
+      "source": "ii0001",
+      "type": "isSpouseOf",
+      "target": "ii0000"
+    },
+    {
+      "source": "ii0086",
+      "type": "isSpouseOf",
+      "target": "ii0025"
+    },
+    {
+      "source": "ii0007",
+      "type": "isSpouseOf",
+      "target": "ii0020"
+    },
+    {
+      "source": "ii0052",
+      "type": "isSpouseOf",
+      "target": "ii0051"
+    },
+    {
+      "source": "ii0019",
+      "type": "isSpouseOf",
+      "target": "ii0006"
+    },
+    {
+      "source": "ii0084",
+      "type": "isSpouseOf",
+      "target": "ii0108"
+    },
+    {
+      "source": "ii0113",
+      "type": "isSpouseOf",
+      "target": "ii0132"
+    },
+    {
+      "source": "ii0037",
+      "type": "isSpouseOf",
+      "target": "ii0016"
+    },
+    {
+      "source": "ii0031",
+      "type": "isSpouseOf",
+      "target": "ii0030"
+    },
+    {
+      "source": "ii0048",
+      "type": "isSpouseOf",
+      "target": "ii0047"
+    },
+    {
+      "source": "ii0128",
+      "type": "isSpouseOf",
+      "target": "ii0127"
+    },
+    {
+      "source": "ii0073",
+      "type": "isSpouseOf",
+      "target": "ii0059"
+    },
+    {
+      "source": "ii0083",
+      "type": "isSpouseOf",
+      "target": "ii0059"
+    },
+    {
+      "source": "ii0040",
+      "type": "isSpouseOf",
+      "target": "ii0018"
+    },
+    {
+      "source": "ii0044",
+      "type": "isSpouseOf",
+      "target": "ii0043"
+    },
+    {
+      "source": "ii0005",
+      "type": "isSpouseOf",
+      "target": "ii0004"
+    },
+    {
+      "source": "ii0095",
+      "type": "isSpouseOf",
+      "target": "ii0029"
+    },
+    {
+      "source": "ii0056",
+      "type": "isSpouseOf",
+      "target": "ii0055"
+    },
+    {
+      "source": "ii0015",
+      "type": "isSpouseOf",
+      "target": "ii0014"
+    },
+    {
+      "source": "ii0112",
+      "type": "isSpouseOf",
+      "target": "ii0111"
+    },
+    {
+      "source": "ii0081",
+      "type": "isSpouseOf",
+      "target": "ii0060"
+    },
+    {
+      "source": "ii0054",
+      "type": "isSpouseOf",
+      "target": "ii0053"
+    },
+    {
+      "source": "ii0089",
+      "type": "isSpouseOf",
+      "target": "ii0024"
+    },
+    {
+      "source": "ii0021",
+      "type": "isSpouseOf",
+      "target": "ii0012"
+    },
+    {
+      "source": "ii0107",
+      "type": "isSpouseOf",
+      "target": "ii0104"
+    },
+    {
+      "source": "ii0058",
+      "type": "isSpouseOf",
+      "target": "ii0057"
+    },
+    {
+      "source": "ii0050",
+      "type": "isSpouseOf",
+      "target": "ii0049"
+    },
+    {
+      "source": "ii0011",
+      "type": "isSpouseOf",
+      "target": "ii0010"
+    },
+    {
+      "source": "ii0131",
+      "type": "isSpouseOf",
+      "target": "ii0130"
+    },
+    {
+      "source": "ii0038",
+      "type": "isSpouseOf",
+      "target": "ii0017"
+    },
+    {
+      "source": "ii0061",
+      "type": "isSpouseOf",
+      "target": "ii0060"
+    },
+    {
+      "source": "ii0076",
+      "type": "isSpouseOf",
+      "target": "ii0126"
+    },
+    {
+      "source": "ii0092",
+      "type": "isSpouseOf",
+      "target": "ii0023"
+    },
+    {
+      "source": "ii0046",
+      "type": "isSpouseOf",
+      "target": "ii0045"
+    },
+    {
+      "source": "ii0008",
+      "type": "isSpouseOf",
+      "target": "ii0009"
+    },
+    {
+      "source": "ii0022",
+      "type": "isSpouseOf",
+      "target": "ii0013"
+    },
+    {
+      "source": "ii0109",
+      "type": "isSpouseOf",
+      "target": "ii0110"
+    },
+    {
+      "source": "ii0200",
+      "type": "isFatherOf",
+      "target": "ii0201"
+    },
+    {
+      "source": "ii0201",
+      "type": "isFatherOf",
+      "target": "ii0055"
+    },
+    {
+      "source": "ii0202",
+      "type": "isSpouseOf",
+      "target": "ii0055"
+    },
+    {
+      "source": "ii0202",
+      "type": "isMotherOf",
+      "target": "ii0084"
+    },
+    {
+      "source": "ii0202",
+      "type": "isMotherOf",
+      "target": "ii0116"
+    },
+    {
+      "source": "ii0202",
+      "type": "isMotherOf",
+      "target": "ii0117"
+    },
+    {
+      "source": "ii0203",
+      "type": "isFatherOf",
+      "target": "ii0060"
+    },
+    {
+      "source": "ii0203",
+      "type": "isFatherOf",
+      "target": "ii0204"
+    },
+    {
+      "source": "ii0203",
+      "type": "isFatherOf",
+      "target": "ii0205"
+    },
+    {
+      "source": "ii0060",
+      "type": "isFatherOf",
+      "target": "ii0206"
+    },
+    {
+      "source": "ii0060",
+      "type": "isFatherOf",
+      "target": "ii0207"
+    },
+    {
+      "source": "ii0060",
+      "type": "isFatherOf",
+      "target": "ii0208"
+    },
+    {
+      "source": "ii0206",
+      "type": "isFatherOf",
+      "target": "ii0209"
+    },
+    {
+      "source": "ii0206",
+      "type": "isFatherOf",
+      "target": "ii0210"
+    },
+    {
+      "source": "ii0206",
+      "type": "isFatherOf",
+      "target": "ii0211"
+    },
+    {
+      "source": "ii0207",
+      "type": "isSpouseOf",
+      "target": "ii0212"
+    },
+    {
+      "source": "ii0207",
+      "type": "isFatherOf",
+      "target": "ii0213"
+    },
+    {
+      "source": "ii0207",
+      "type": "isFatherOf",
+      "target": "ii0214"
+    },
+    {
+      "source": "ii0207",
+      "type": "isFatherOf",
+      "target": "ii0215"
+    },
+    {
+      "source": "ii0207",
+      "type": "isFatherOf",
+      "target": "ii0216"
+    },
+    {
+      "source": "ii0207",
+      "type": "isFatherOf",
+      "target": "ii0217"
+    },
+    {
+      "source": "ii0212",
+      "type": "isMotherOf",
+      "target": "ii0213"
+    },
+    {
+      "source": "ii0212",
+      "type": "isMotherOf",
+      "target": "ii0214"
+    },
+    {
+      "source": "ii0212",
+      "type": "isMotherOf",
+      "target": "ii0215"
+    },
+    {
+      "source": "ii0212",
+      "type": "isMotherOf",
+      "target": "ii0216"
+    },
+    {
+      "source": "ii0212",
+      "type": "isMotherOf",
+      "target": "ii0217"
+    },
+    {
+      "source": "ii0204",
+      "type": "isFatherOf",
+      "target": "ii0218"
+    },
+    {
+      "source": "ii0204",
+      "type": "isFatherOf",
+      "target": "ii0219"
+    },
+    {
+      "source": "ii0218",
+      "type": "isFatherOf",
+      "target": "ii0220"
+    },
+    {
+      "source": "ii0218",
+      "type": "isFatherOf",
+      "target": "ii0221"
+    },
+    {
+      "source": "ii0218",
+      "type": "isFatherOf",
+      "target": "ii0038"
+    },
+    {
+      "source": "ii0218",
+      "type": "isFatherOf",
+      "target": "ii0222"
+    },
+    {
+      "source": "ii0060",
+      "type": "isFatherOf",
+      "target": "ii0223"
+    },
+    {
+      "source": "ii0224",
+      "type": "isFatherOf",
+      "target": "ii0059"
+    },
+    {
+      "source": "ii0059",
+      "type": "isFatherOf",
+      "target": "ii0225"
+    },
+    {
+      "source": "ii0300",
+      "type": "isFatherOf",
+      "target": "ii0301",
+      "notes": "7 generations gap between them"
+    },
+    {
+      "source": "ii0301",
+      "type": "isFatherOf",
+      "target": "ii0302"
+    },
+    {
+      "source": "ii0302",
+      "type": "isFatherOf",
+      "target": "ii0224",
+      "notes": "7 generations gap between them"
+    }
+  ]
+}
