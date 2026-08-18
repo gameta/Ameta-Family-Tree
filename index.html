@@ -270,35 +270,60 @@ if (sessionStorage.getItem('fke-auth') === '1') {
 <script src="path-walker.js?v=2"></script>
 <script src="kinship-rules.js?v=2"></script>
 <script>
-function toDevanagari(text) {
-  if (!text) return text;
-  const consonants = {ksh:'क्ष',gn:'ज्ञ',gy:'ज्ञ',shri:'श्री',shr:'श्र',sh:'श',chh:'छ',ch:'च',th:'थ',dh:'ध',ph:'फ',bh:'भ',kh:'ख',gh:'घ',jh:'झ',tr:'त्र',pr:'प्र',kr:'क्र',gr:'ग्र',br:'ब्र',dr:'द्र',nk:'ंक',ng:'ंग',nd:'न्द',nt:'न्त',mp:'म्प',mb:'म्ब',k:'क',g:'ग',j:'ज',t:'त',d:'द',n:'न',p:'प',b:'ब',m:'म',y:'य',r:'र',l:'ल',v:'व',w:'व',s:'स',h:'ह'};
-  const vowelMod = {a:'',aa:'ा',i:'ि',ee:'ी',ii:'ी',u:'ु',oo:'ू',uu:'ू',ai:'ै',ei:'ै',au:'ौ',ou:'ौ',e:'े',o:'ो'};
-  const vowelFull = {a:'अ',aa:'आ',i:'इ',ee:'ई',ii:'ई',u:'उ',oo:'ऊ',uu:'ऊ',ai:'ऐ',ei:'ऐ',au:'औ',ou:'औ',e:'ए',o:'ओ'};
-  const cKeys = Object.keys(consonants).sort((a,b)=>b.length-a.length);
-  const vKeys = Object.keys(vowelMod).sort((a,b)=>b.length-a.length);
-  return text.split(/\s+/).map(word => {
-    let res='', i=0, w=word.toLowerCase();
-    while(i<w.length){
-      let cm=null;
-      for(const ck of cKeys){if(w.startsWith(ck,i)){cm=ck;break;}}
-      if(cm){
-        i+=cm.length;
-        let vm=null;
-        for(const vk of vKeys){if(w.startsWith(vk,i)){vm=vk;break;}}
-        if(vm){res+=consonants[cm]+vowelMod[vm];i+=vm.length;}
-        else{res+=consonants[cm]+'्';}
-      } else {
-        let vm=null;
-        for(const vk of vKeys){if(w.startsWith(vk,i)){vm=vk;break;}}
-        if(vm){res+=vowelFull[vm];i+=vm.length;}
-        else{res+=w[i];i++;}
-      }
-    }
-    return res.replace(/्$/,'');
-  }).join(' ');
+const HINDI_NAMES = {
+  'ameta':'आमेटा','vyas':'व्यास','pathak':'पाठक','bhatt':'भट्ट','dwivedi':'द्विवेदी','trivedi':'त्रिवेदी','joshi':'जोशी',
+  'gaurav':'गौरव','usha':'उषा','divyansh':'दिव्यांश','yogvit':'योगवित','raj':'राज','vallabh':'वल्लभ',
+  'kusum':'कुसुम','prateek':'प्रतीक','jyoti':'ज्योति','manju':'मंजु','bharat':'भारत',
+  'laxmi':'लक्ष्मी','shanti':'शांति','devi':'देवी','govind':'गोविंद','radha':'राधा',
+  'sagar':'सागर','virendra':'वीरेंद्र','rajendra':'राजेंद्र','dilip':'दिलीप','sameera':'समीरा',
+  'himanshu':'हिमांशु','pushpa':'पुष्पा','anusuya':'अनुसूया','pawan':'पवन','gagan':'गगन',
+  'kshitij':'क्षितिज','rohit':'रोहित','gayatri':'गायत्री','aena':'एना','piyush':'पीयूष',
+  'jayesh':'जयेश','pramita':'प्रमिता','ekayan':'एकायन','aarjav':'आर्जव','vijay':'विजय',
+  'nidhi':'निधि','dhruv':'ध्रुव','shyama':'श्यामा','chandra':'चंद्र','varun':'वरुण',
+  'madhavi':'माधवी','sagarika':'सागरिका','kashyap':'कश्यप',
+  'ramshankar':'रामशंकर','chandrabhaga':'चंद्रभागा','ganpatlal':'गणपतलाल',
+  'leelavati':'लीलावती','kalulal':'कालूलाल','mangani':'मंगनी','gautam':'गौतम',
+  'gehri':'गेहरी','bai':'बाई','lacchi':'लच्छी','ram':'राम','kesar':'केसर',
+  'harlal':'हरलाल','mohani':'मोहनी','durga':'दुर्गा','shankar':'शंकर',
+  'jasoda':'जसोदा','kalu':'कालू','lal':'लाल','gendi':'गेंदी',
+  'shree':'श्री','krishna':'कृष्ण','harivallabh':'हरिवल्लभ','manak':'मानक',
+  'shambhu':'शंभु','shyamsundar':'श्यामसुंदर','leela':'लीला','bhagwanti':'भगवंती',
+  'girija':'गिरिजा','shakuntala':'शकुंतला','bherulal':'भेरूलाल','guneshi':'गुनेशी',
+  'lalit':'ललित','susheela':'सुशीला','suresh':'सुरेश','jamna':'जमना',
+  'gamer':'गमेर','ba':'बा','chand':'चांद','suraj':'सूरज','tara':'तारा',
+  'gopi':'गोपी','gajendra':'गजेंद्र','rambha':'रंभा','kasturi':'कस्तूरी',
+  'sunder':'सुंदर','aadhya':'आध्या','kirti':'कीर्ति','yash':'यश',
+  'nikit':'निकित','hemalata':'हेमलता','mantavya':'मंतव्य','shrijal':'श्रीजल',
+  'manisha':'मनीषा','jivika':'जीविका','samarth':'समर्थ','rekha':'रेखा',
+  'jalaj':'जलज','isha':'ईशा','bhavya':'भव्या','guddi':'गुड्डी',
+  'neetu':'नीतू','vrinda':'वृंदा','ananta':'अनंता','rajeshwar':'राजेश्वर',
+  'lokesh':'लोकेश','chhaya':'छाया','kunal':'कुणाल','nikita':'निकिता',
+  'girdhari':'गिरधारी','narbada':'नर्बदा','manohar':'मनोहर','lachmi':'लच्छमी',
+  'panna':'पन्ना','narayani':'नारायणी','ramchandra':'रामचंद्र',
+  'hetshankar':'हेतशंकर','vasanti':'वसंती','gekya':'गेक्या',
+  'krishnakant':'कृष्णकांत','ramakant':'रामकांत','satyakant':'सत्यकांत',
+  'nirmla':'निर्मला','gangadhar':'गंगाधर','modiram':'मोदीराम',
+  'jamnashankar':'जमनाशंकर','jagganath':'जगन्नाथ','shivnarayan':'शिवनारायण',
+  'giriraj':'गिरिराज','mohanlal':'मोहनलाल','kashi':'काशी',
+  'hemraj':'हेमराज','ambalal':'अंबालाल','neelkanth':'नीलकंठ',
+  'bhagwantilal':'भगवंतीलाल','mukutlal':'मुकुटलाल','pannalal':'पन्नालाल',
+  'gopal':'गोपाल','jai':'जय','shiv':'शिव','snehlata':'स्नेहलता',
+  'swarnalata':'स्वर्णलता','rajnilata':'रजनीलता','durgashankar':'दुर्गाशंकर',
+  'sunderlal':'सुंदरलाल','sonu':'सोनू','neera':'नीरा',
+  'mahesh':'महेश','pati':'पाती','ji':'जी',
+  'thangudu':'थांगुडु','wife':'','of':'','1':'१',
+  'patriarch':'','het':'हेत',
+  'shivlal':'शिवलाल','pannalal':'पन्नालाल','govardhan':'गोवर्धन',
+  'lakshmi':'लक्ष्मी','das':'दास','hari':'हरि','har':'हर',
+};
+function displayName(name) {
+  if (!name || currentLang !== 'hi') return name;
+  return name.split(/\s+/).map(w => {
+    const key = w.toLowerCase();
+    if (HINDI_NAMES[key] !== undefined) return HINDI_NAMES[key];
+    return w;
+  }).join(' ').trim();
 }
-function displayName(n){return currentLang==='hi'?toDevanagari(n):n;}
 </script>
 <script>
 // Global state
@@ -993,7 +1018,7 @@ depthSlider.addEventListener('input', function() {
 function toggleLang() {
   currentLang = currentLang === 'hi' ? 'en' : 'hi';
   document.getElementById('lang-toggle').textContent = currentLang === 'hi' ? 'HI / EN' : 'EN / HI';
-  if (focalPerson) showPersonInfo(focalPerson);
+  if (focalPerson) { renderGraph(); showPersonInfo(focalPerson); }
 }
 
 // Relationship finder
