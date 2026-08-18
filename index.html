@@ -168,15 +168,15 @@ svg { width: 100%; height: 100%; }
 </div>
 <script>
 function logVisitor() {
-  fetch('http://ip-api.com/json/')
+  fetch('https://ipapi.co/json/')
     .then(r => r.json())
     .then(geo => {
       const info = {
-        ip: geo.query,
+        ip: geo.ip,
         city: geo.city,
-        region: geo.regionName,
-        country: geo.country,
-        isp: geo.isp,
+        region: geo.region,
+        country: geo.country_name,
+        isp: geo.org || '',
         device: navigator.userAgent,
         screen: screen.width + 'x' + screen.height,
         time: new Date().toLocaleString()
@@ -204,6 +204,7 @@ function checkGatePassword() {
 }
 if (sessionStorage.getItem('fke-auth') === '1') {
   document.getElementById('password-gate').style.display = 'none';
+  logVisitor();
 }
 </script>
 
@@ -268,6 +269,37 @@ if (sessionStorage.getItem('fke-auth') === '1') {
 
 <script src="path-walker.js?v=2"></script>
 <script src="kinship-rules.js?v=2"></script>
+<script>
+function toDevanagari(text) {
+  if (!text) return text;
+  const consonants = {ksh:'क्ष',gn:'ज्ञ',gy:'ज्ञ',shri:'श्री',shr:'श्र',sh:'श',chh:'छ',ch:'च',th:'थ',dh:'ध',ph:'फ',bh:'भ',kh:'ख',gh:'घ',jh:'झ',tr:'त्र',pr:'प्र',kr:'क्र',gr:'ग्र',br:'ब्र',dr:'द्र',nk:'ंक',ng:'ंग',nd:'न्द',nt:'न्त',mp:'म्प',mb:'म्ब',k:'क',g:'ग',j:'ज',t:'त',d:'द',n:'न',p:'प',b:'ब',m:'म',y:'य',r:'र',l:'ल',v:'व',w:'व',s:'स',h:'ह'};
+  const vowelMod = {a:'',aa:'ा',i:'ि',ee:'ी',ii:'ी',u:'ु',oo:'ू',uu:'ू',ai:'ै',ei:'ै',au:'ौ',ou:'ौ',e:'े',o:'ो'};
+  const vowelFull = {a:'अ',aa:'आ',i:'इ',ee:'ई',ii:'ई',u:'उ',oo:'ऊ',uu:'ऊ',ai:'ऐ',ei:'ऐ',au:'औ',ou:'औ',e:'ए',o:'ओ'};
+  const cKeys = Object.keys(consonants).sort((a,b)=>b.length-a.length);
+  const vKeys = Object.keys(vowelMod).sort((a,b)=>b.length-a.length);
+  return text.split(/\s+/).map(word => {
+    let res='', i=0, w=word.toLowerCase();
+    while(i<w.length){
+      let cm=null;
+      for(const ck of cKeys){if(w.startsWith(ck,i)){cm=ck;break;}}
+      if(cm){
+        i+=cm.length;
+        let vm=null;
+        for(const vk of vKeys){if(w.startsWith(vk,i)){vm=vk;break;}}
+        if(vm){res+=consonants[cm]+vowelMod[vm];i+=vm.length;}
+        else{res+=consonants[cm]+'्';}
+      } else {
+        let vm=null;
+        for(const vk of vKeys){if(w.startsWith(vk,i)){vm=vk;break;}}
+        if(vm){res+=vowelFull[vm];i+=vm.length;}
+        else{res+=w[i];i++;}
+      }
+    }
+    return res.replace(/्$/,'');
+  }).join(' ');
+}
+function displayName(n){return currentLang==='hi'?toDevanagari(n):n;}
+</script>
 <script>
 // Global state
 let graph = null;
@@ -805,7 +837,8 @@ function renderGraph() {
     if (isFocal) nodeClass += ' focal';
 
     const r = isFocal ? 14 : 8;
-    const fullName = node.name || node.id;
+    const rawName = node.name || node.id;
+    const fullName = displayName(rawName);
     const nameParts = fullName.split(' ');
     const firstName = nameParts[0];
     const lastName = nameParts.length > 1 ? nameParts.slice(1).join(' ') : '';
@@ -844,7 +877,7 @@ function showPersonInfo(personId) {
   const lineageHeader = document.getElementById('lineage-header');
 
   const node = graph.nodes[personId];
-  nameEl.textContent = node ? node.name : personId;
+  nameEl.textContent = node ? displayName(node.name) : personId;
   genderEl.textContent = node ? (node.gender === 'M' ? '♂ Male' : node.gender === 'F' ? '♀ Female' : '') : '';
 
   // Show gotra and native town
@@ -899,7 +932,7 @@ function showPersonInfo(personId) {
       lineageHeader.style.display = 'block';
       lineageEl.innerHTML = lineage.map((ancestor, i) =>
         `<div style="padding:3px 0 3px ${i * 12}px;font-size:12px;color:${i === 0 ? '#fff' : '#999'};">
-          ${i > 0 ? '└ ' : '● '}<span style="cursor:pointer" onclick="setFocalPerson('${ancestor.id}')">${ancestor.name}</span>
+          ${i > 0 ? '└ ' : '● '}<span style="cursor:pointer" onclick="setFocalPerson('${ancestor.id}')">${displayName(ancestor.name)}</span>
         </div>`
       ).join('');
     } else {
@@ -932,7 +965,7 @@ searchBox.addEventListener('input', function() {
   if (matches.length === 0) { searchResults.style.display = 'none'; return; }
 
   searchResults.innerHTML = matches.map(p =>
-    `<div onclick="selectSearchResult('${p.id}')">${p.name} ${p.gender === 'M' ? '♂' : p.gender === 'F' ? '♀' : ''}</div>`
+    `<div onclick="selectSearchResult('${p.id}')">${displayName(p.name)} ${p.gender === 'M' ? '♂' : p.gender === 'F' ? '♀' : ''}</div>`
   ).join('');
   searchResults.style.display = 'block';
 });
