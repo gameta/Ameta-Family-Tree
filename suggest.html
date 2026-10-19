@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Suggest - Ameta Family Tree</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: #1a1a2e; color: #eee; min-height: 100vh; }
+
+.container { max-width: 600px; margin: 0 auto; padding: 30px 20px; }
+
+h1 { color: #e94560; font-size: 22px; margin-bottom: 8px; }
+.subtitle { color: #999; font-size: 14px; margin-bottom: 30px; }
+
+.back-link { color: #e94560; text-decoration: none; font-size: 13px; display: inline-block; margin-bottom: 20px; }
+.back-link:hover { text-decoration: underline; }
+
+/* Chooser cards */
+.chooser { display: flex; gap: 16px; margin-bottom: 30px; }
+.card {
+  flex: 1; padding: 20px; background: #16213e; border: 2px solid #0f3460;
+  border-radius: 10px; cursor: pointer; transition: border-color 0.2s;
+}
+.card:hover, .card.active { border-color: #e94560; }
+.card h3 { color: #e94560; font-size: 15px; margin-bottom: 6px; }
+.card p { color: #999; font-size: 12px; }
+
+/* Form */
+.form-section { display: none; }
+.form-section.active { display: block; }
+
+label { display: block; color: #ccc; font-size: 13px; margin-top: 16px; margin-bottom: 4px; }
+label .required { color: #e94560; }
+
+input[type="text"], input[type="number"], select, textarea {
+  width: 100%; padding: 10px 14px; border-radius: 6px;
+  border: 1px solid #0f3460; background: #16213e; color: #eee; font-size: 14px;
+  font-family: inherit;
+}
+input::placeholder, textarea::placeholder { color: #555; }
+textarea { resize: vertical; min-height: 80px; }
+
+select { appearance: auto; }
+
+.hint { color: #666; font-size: 11px; margin-top: 2px; }
+
+.btn-submit {
+  margin-top: 24px; padding: 12px 28px; border-radius: 6px; border: none;
+  background: #e94560; color: #fff; font-size: 15px; font-weight: bold;
+  cursor: pointer; width: 100%;
+}
+.btn-submit:hover { background: #c73e54; }
+
+.preview { display: none; margin-top: 20px; padding: 16px; background: #16213e; border-radius: 8px; border: 1px solid #0f3460; }
+.preview h3 { color: #0f9; margin-bottom: 10px; font-size: 14px; }
+.preview pre { color: #ccc; font-size: 12px; white-space: pre-wrap; word-wrap: break-word; }
+
+@media (max-width: 600px) {
+  .chooser { flex-direction: column; }
+  .container { padding: 20px 16px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <a href="index.html" class="back-link">&larr; Back to Family Tree</a>
+  <h1>Contribute to the Family Tree</h1>
+  <p class="subtitle">Fill in the details below. Your submission will be sent for admin review.</p>
+
+  <div class="chooser">
+    <div class="card active" onclick="showForm('member')" id="card-member">
+      <h3>Suggest a Member</h3>
+      <p>Add a new person to the family tree with their details and relationships</p>
+    </div>
+    <div class="card" onclick="showForm('import')" id="card-import">
+      <h3>Import Tree Data</h3>
+      <p>Submit family tree data in GEDCOM or JSON format</p>
+    </div>
+  </div>
+
+  <!-- Suggest a Member form -->
+  <div id="form-member" class="form-section active">
+    <label>Full Name <span class="required">*</span></label>
+    <input type="text" id="m-name" placeholder="e.g. Ramesh Ameta" required>
+
+    <label>Gender <span class="required">*</span></label>
+    <select id="m-gender">
+      <option value="">Select...</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select>
+
+    <label>Father's Name</label>
+    <input type="text" id="m-father" placeholder="e.g. Suresh Ameta">
+    <p class="hint">Should be someone already in the tree, or also being suggested</p>
+
+    <label>Mother's Name</label>
+    <input type="text" id="m-mother" placeholder="e.g. Kamla Ameta">
+
+    <label>Spouse's Name</label>
+    <input type="text" id="m-spouse" placeholder="e.g. Sunita Ameta">
+
+    <label>Birth Year (approximate)</label>
+    <input type="text" id="m-birth" placeholder="e.g. 1975">
+
+    <label>Gotra</label>
+    <input type="text" id="m-gotra" placeholder="e.g. Kashyap">
+
+    <label>Native Town / Village</label>
+    <input type="text" id="m-town" placeholder="e.g. Bagidora">
+
+    <label>Children</label>
+    <textarea id="m-children" placeholder="List children names, one per line"></textarea>
+
+    <label>Additional Notes</label>
+    <textarea id="m-notes" placeholder="e.g. Eldest son of Suresh ji, settled in Udaipur"></textarea>
+
+    <label>Your Name / Relation <span class="required">*</span></label>
+    <input type="text" id="m-submitter" placeholder="e.g. Gaurav (grandson)">
+
+    <button class="btn-submit" onclick="submitMember()">Preview &amp; Submit</button>
+  </div>
+
+  <!-- Import Tree Data form -->
+  <div id="form-import" class="form-section">
+    <label>Data Format <span class="required">*</span></label>
+    <select id="i-format">
+      <option value="">Select...</option>
+      <option value="GEDCOM">GEDCOM</option>
+      <option value="JSON">JSON</option>
+    </select>
+
+    <label>Family Tree Data <span class="required">*</span></label>
+    <textarea id="i-data" style="min-height:200px;" placeholder="Paste your GEDCOM or JSON data here..."></textarea>
+
+    <label>Notes</label>
+    <textarea id="i-notes" placeholder="e.g. This covers the Bagidora branch, 3 generations"></textarea>
+
+    <label>Your Name / Relation <span class="required">*</span></label>
+    <input type="text" id="i-submitter" placeholder="e.g. Gaurav (grandson)">
+
+    <button class="btn-submit" onclick="submitImport()">Preview &amp; Submit</button>
+  </div>
+
+  <div id="preview-box" class="preview">
+    <h3>Preview — review before submitting</h3>
+    <pre id="preview-text"></pre>
+    <button class="btn-submit" id="preview-submit" style="margin-top:14px;">Submit to GitHub</button>
+  </div>
+</div>
+
+<script>
+const REPO = 'gameta/Ameta-Family-Tree';
+
+function showForm(type) {
+  document.getElementById('form-member').classList.toggle('active', type === 'member');
+  document.getElementById('form-import').classList.toggle('active', type === 'import');
+  document.getElementById('card-member').classList.toggle('active', type === 'member');
+  document.getElementById('card-import').classList.toggle('active', type === 'import');
+  document.getElementById('preview-box').style.display = 'none';
+}
+
+function submitMember() {
+  const name = document.getElementById('m-name').value.trim();
+  const gender = document.getElementById('m-gender').value;
+  const submitter = document.getElementById('m-submitter').value.trim();
+
+  if (!name) return alert('Please enter the full name.');
+  if (!gender) return alert('Please select a gender.');
+  if (!submitter) return alert('Please enter your name / relation.');
+
+  const fields = {
+    'Full Name': name,
+    'Gender': gender,
+    'Father\'s Name': document.getElementById('m-father').value.trim(),
+    'Mother\'s Name': document.getElementById('m-mother').value.trim(),
+    'Spouse\'s Name': document.getElementById('m-spouse').value.trim(),
+    'Birth Year': document.getElementById('m-birth').value.trim(),
+    'Gotra': document.getElementById('m-gotra').value.trim(),
+    'Native Town': document.getElementById('m-town').value.trim(),
+    'Children': document.getElementById('m-children').value.trim(),
+    'Additional Notes': document.getElementById('m-notes').value.trim(),
+    'Submitted By': submitter,
+  };
+
+  let body = '';
+  for (const [key, val] of Object.entries(fields)) {
+    if (val) body += `**${key}:** ${val}\n`;
+  }
+
+  const title = `[New Member] ${name}`;
+  showPreview(title, body);
+}
+
+function submitImport() {
+  const format = document.getElementById('i-format').value;
+  const data = document.getElementById('i-data').value.trim();
+  const submitter = document.getElementById('i-submitter').value.trim();
+
+  if (!format) return alert('Please select a data format.');
+  if (!data) return alert('Please paste your tree data.');
+  if (!submitter) return alert('Please enter your name / relation.');
+
+  const notes = document.getElementById('i-notes').value.trim();
+
+  let body = `**Format:** ${format}\n**Submitted By:** ${submitter}\n`;
+  if (notes) body += `**Notes:** ${notes}\n`;
+  body += `\n\`\`\`\n${data}\n\`\`\``;
+
+  const title = `[Import] ${format} data from ${submitter}`;
+  showPreview(title, body);
+}
+
+function showPreview(title, body) {
+  const box = document.getElementById('preview-box');
+  document.getElementById('preview-text').textContent = `Title: ${title}\n\n${body}`;
+  box.style.display = 'block';
+  box.scrollIntoView({ behavior: 'smooth' });
+
+  document.getElementById('preview-submit').onclick = function () {
+    const url = `https://github.com/${REPO}/issues/new?` + new URLSearchParams({
+      title: title,
+      body: body,
+      labels: 'pending-review',
+    }).toString();
+    window.open(url, '_blank');
+  };
+}
+</script>
+</body>
+</html>
