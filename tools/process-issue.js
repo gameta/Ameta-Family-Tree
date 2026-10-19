@@ -133,6 +133,7 @@ function addPerson(data, fields) {
   }
 
   // If both father and mother are known, ensure they're linked as spouses
+  const warnings = [];
   if (fields.father && fields.mother) {
     const fatherId = findPersonByName(data, fields.father);
     const motherId = findPersonByName(data, fields.mother);
@@ -143,6 +144,23 @@ function addPerson(data, fields) {
          (e.source === motherId && e.target === fatherId))
       );
       if (!alreadySpouses) {
+        // Check if either parent already has a different spouse
+        const fatherSpouses = data.edges
+          .filter(e => e.type === 'isSpouseOf' && (e.source === fatherId || e.target === fatherId))
+          .map(e => e.source === fatherId ? e.target : e.source)
+          .map(id => data.nodes[id]?.name || id);
+        const motherSpouses = data.edges
+          .filter(e => e.type === 'isSpouseOf' && (e.source === motherId || e.target === motherId))
+          .map(e => e.source === motherId ? e.target : e.source)
+          .map(id => data.nodes[id]?.name || id);
+
+        if (fatherSpouses.length > 0) {
+          warnings.push(`${fields.father} already has spouse(s): ${fatherSpouses.join(', ')}. Adding ${fields.mother} as additional spouse — verify this is correct.`);
+        }
+        if (motherSpouses.length > 0) {
+          warnings.push(`${fields.mother} already has spouse(s): ${motherSpouses.join(', ')}. Adding ${fields.father} as additional spouse — verify this is correct.`);
+        }
+
         data.edges.push({ source: fatherId, type: 'isSpouseOf', target: motherId });
         linked.push(`Parents linked as spouses: ${fields.father} & ${fields.mother}`);
       }
@@ -174,7 +192,7 @@ function addPerson(data, fields) {
     }
   }
 
-  return { newId, node, linked, created };
+  return { newId, node, linked, created, warnings };
 }
 
 // Main
@@ -225,6 +243,9 @@ if (mode === 'add') {
   if (result.created.length > 0) {
     msg += `\n\n**Auto-created as placeholders (name only):**\n${result.created.map(l => '- 🆕 ' + l).join('\n')}`;
     msg += `\n\n_These were not in the tree yet, so they were added with minimal info. Submit separate issues to fill in their details (gotra, birth year, native town, etc.)._`;
+  }
+  if (result.warnings.length > 0) {
+    msg += `\n\n**⚠️ Needs attention:**\n${result.warnings.map(w => '- ' + w).join('\n')}`;
   }
   console.log(`::set-output name=status::added`);
   console.log(`::set-output name=message::${msg.replace(/\n/g, '%0A')}`);
