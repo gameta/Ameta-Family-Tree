@@ -88,6 +88,17 @@ function findPersonByName(data, name) {
   return null;
 }
 
+function findOrCreate(data, name, hints) {
+  if (!name) return null;
+  const existing = findPersonByName(data, name);
+  if (existing) return { id: existing, created: false };
+  const newId = getNextId(data);
+  const node = { name };
+  if (hints.gender) node.gender = hints.gender;
+  data.nodes[newId] = node;
+  return { id: newId, created: true };
+}
+
 function addPerson(data, fields) {
   const newId = getNextId(data);
   const node = { name: fields.name };
@@ -99,53 +110,54 @@ function addPerson(data, fields) {
   data.nodes[newId] = node;
 
   const linked = [];
-  const notFound = [];
+  const created = [];
 
-  const fatherId = findPersonByName(data, fields.father);
   if (fields.father) {
-    if (fatherId) {
-      data.edges.push({ source: fatherId, type: 'isFatherOf', target: newId });
+    const father = findOrCreate(data, fields.father, { gender: 'M' });
+    data.edges.push({ source: father.id, type: 'isFatherOf', target: newId });
+    if (father.created) {
+      created.push(`Father: ${fields.father} (${father.id})`);
+    } else {
       linked.push(`Father: ${fields.father}`);
-    } else {
-      notFound.push(`Father: ${fields.father}`);
     }
   }
 
-  const motherId = findPersonByName(data, fields.mother);
   if (fields.mother) {
-    if (motherId) {
-      data.edges.push({ source: motherId, type: 'isMotherOf', target: newId });
-      linked.push(`Mother: ${fields.mother}`);
+    const mother = findOrCreate(data, fields.mother, { gender: 'F' });
+    data.edges.push({ source: mother.id, type: 'isMotherOf', target: newId });
+    if (mother.created) {
+      created.push(`Mother: ${fields.mother} (${mother.id})`);
     } else {
-      notFound.push(`Mother: ${fields.mother}`);
+      linked.push(`Mother: ${fields.mother}`);
     }
   }
 
-  const spouseId = findPersonByName(data, fields.spouse);
   if (fields.spouse) {
-    if (spouseId) {
-      data.edges.push({ source: newId, type: 'isSpouseOf', target: spouseId });
-      linked.push(`Spouse: ${fields.spouse}`);
+    const spouseGender = node.gender === 'M' ? 'F' : node.gender === 'F' ? 'M' : null;
+    const spouse = findOrCreate(data, fields.spouse, { gender: spouseGender });
+    data.edges.push({ source: newId, type: 'isSpouseOf', target: spouse.id });
+    if (spouse.created) {
+      created.push(`Spouse: ${fields.spouse} (${spouse.id})`);
     } else {
-      notFound.push(`Spouse: ${fields.spouse}`);
+      linked.push(`Spouse: ${fields.spouse}`);
     }
   }
 
   if (fields.children) {
     const childNames = fields.children.split('\n').map(c => c.trim()).filter(Boolean);
     for (const childName of childNames) {
-      const childId = findPersonByName(data, childName);
-      if (childId) {
-        const edgeType = node.gender === 'M' ? 'isFatherOf' : 'isMotherOf';
-        data.edges.push({ source: newId, type: edgeType, target: childId });
-        linked.push(`Child: ${childName}`);
+      const child = findOrCreate(data, childName, {});
+      const edgeType = node.gender === 'M' ? 'isFatherOf' : 'isMotherOf';
+      data.edges.push({ source: newId, type: edgeType, target: child.id });
+      if (child.created) {
+        created.push(`Child: ${childName} (${child.id})`);
       } else {
-        notFound.push(`Child: ${childName}`);
+        linked.push(`Child: ${childName}`);
       }
     }
   }
 
-  return { newId, node, linked, notFound };
+  return { newId, node, linked, created };
 }
 
 // Main
@@ -193,14 +205,11 @@ if (mode === 'add') {
   if (result.linked.length > 0) {
     msg += `\n\n**Linked to existing members:**\n${result.linked.map(l => '- ✅ ' + l).join('\n')}`;
   }
-  if (result.notFound.length > 0) {
-    msg += `\n\n**⚠️ Not found in tree (no edge created):**\n${result.notFound.map(l => '- ❌ ' + l).join('\n')}`;
-    msg += `\n\n_These people need to be added separately, then linked manually._`;
+  if (result.created.length > 0) {
+    msg += `\n\n**Auto-created as placeholders (name only):**\n${result.created.map(l => '- 🆕 ' + l).join('\n')}`;
+    msg += `\n\n_These were not in the tree yet, so they were added with minimal info. Submit separate issues to fill in their details (gotra, birth year, native town, etc.)._`;
   }
   console.log(`::set-output name=status::added`);
   console.log(`::set-output name=message::${msg.replace(/\n/g, '%0A')}`);
   console.log(`::set-output name=new_id::${result.newId}`);
-  if (result.notFound.length > 0) {
-    console.log(`::set-output name=warnings::true`);
-  }
 }
