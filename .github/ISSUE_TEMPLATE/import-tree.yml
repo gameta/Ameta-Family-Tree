@@ -1,0 +1,47 @@
+name: Import Family Tree Data
+description: Submit family tree data in GEDCOM or JSON format
+title: "[Import] "
+labels: ["import", "pending-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Upload or paste family tree data for review. Supported formats: GEDCOM (.ged) or JSON.
+
+  - type: textarea
+    id: data
+    attributes:
+      label: Family Tree Data
+      description: Paste your GEDCOM or JSON data here
+      placeholder: |
+        0 HEAD
+        1 SOUR MyApp
+        0 @I1@ INDI
+        1 NAME Ramesh /Ameta/
+        1 SEX M
+        ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: format
+    attributes:
+      label: Data Format
+      options:
+        - GEDCOM
+        - JSON
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Describe what this data contains and how it relates to the existing tree
+      placeholder: e.g. This covers the Bagidora branch, 3 generations
+
+  - type: input
+    id: submitted_by
+    attributes:
+      label: Your Name / Relation
+      placeholder: e.g. Gaurav (grandson)

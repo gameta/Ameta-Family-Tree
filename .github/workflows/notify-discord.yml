@@ -1,0 +1,25 @@
+name: Notify Discord on New Submission
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.labels.*.name, 'pending-review')
+    steps:
+      - name: Send Discord notification
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        run: |
+          TITLE="${{ github.event.issue.title }}"
+          URL="${{ github.event.issue.html_url }}"
+          AUTHOR="${{ github.event.issue.user.login }}"
+          LABELS=$(echo '${{ toJSON(github.event.issue.labels.*.name) }}' | tr -d '[]"')
+
+          MSG="**New Family Tree Submission**\n👤 By: ${AUTHOR}\n📝 ${TITLE}\n🏷️ ${LABELS}\n🔗 ${URL}"
+
+          curl -s -H "Content-Type: application/json" \
+            -d "{\"content\": \"${MSG}\"}" \
+            "$DISCORD_WEBHOOK"

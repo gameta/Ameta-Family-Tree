@@ -1,0 +1,87 @@
+name: Suggest a Family Member
+description: Suggest a new person to add to the Ameta family tree
+title: "[New Member] "
+labels: ["suggestion", "pending-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing to the Ameta Family Tree! Please fill in as much detail as you can.
+
+  - type: input
+    id: name
+    attributes:
+      label: Full Name
+      placeholder: e.g. Ramesh Ameta
+    validations:
+      required: true
+
+  - type: dropdown
+    id: gender
+    attributes:
+      label: Gender
+      options:
+        - Male
+        - Female
+    validations:
+      required: true
+
+  - type: input
+    id: father
+    attributes:
+      label: Father's Name
+      description: Must be someone already in the tree, or also being suggested
+      placeholder: e.g. Suresh Ameta
+
+  - type: input
+    id: mother
+    attributes:
+      label: Mother's Name
+      placeholder: e.g. Kamla Ameta
+
+  - type: input
+    id: spouse
+    attributes:
+      label: Spouse's Name
+      placeholder: e.g. Sunita Ameta
+
+  - type: input
+    id: birth_year
+    attributes:
+      label: Birth Year (approximate)
+      placeholder: e.g. 1975
+
+  - type: input
+    id: gotra
+    attributes:
+      label: Gotra
+      placeholder: e.g. Kashyap
+
+  - type: input
+    id: native_town
+    attributes:
+      label: Native Town / Village
+      placeholder: e.g. Bagidora
+
+  - type: textarea
+    id: children
+    attributes:
+      label: Children
+      description: List children names, one per line
+      placeholder: |
+        Gaurav Ameta
+        Priya Ameta
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Any other details or context about this person
+      placeholder: e.g. Eldest son of Suresh ji, settled in Udaipur
+
+  - type: input
+    id: submitted_by
+    attributes:
+      label: Your Name / Relation
+      description: So the admin knows who is suggesting this
+      placeholder: e.g. Gaurav (grandson)

@@ -1,0 +1,78 @@
+User-agent: *
+Disallow: /
+
+# OpenAI
+User-agent: GPTBot
+Disallow: /
+User-agent: ChatGPT-User
+Disallow: /
+User-agent: OAI-SearchBot
+Disallow: /
+
+# Google AI
+User-agent: Google-Extended
+Disallow: /
+User-agent: GoogleOther
+Disallow: /
+
+# Anthropic
+User-agent: anthropic-ai
+Disallow: /
+User-agent: ClaudeBot
+Disallow: /
+User-agent: Claude-Web
+Disallow: /
+
+# Microsoft / Copilot
+User-agent: Bingbot
+Disallow: /
+User-agent: BingPreview
+Disallow: /
+User-agent: MicrosoftPreview
+Disallow: /
+User-agent: CopilotBot
+Disallow: /
+
+# Meta
+User-agent: FacebookBot
+Disallow: /
+User-agent: FacebookExternalHit
+Disallow: /
+User-agent: meta-externalagent
+Disallow: /
+
+# Common Crawl
+User-agent: CCBot
+Disallow: /
+
+# Cohere
+User-agent: cohere-ai
+Disallow: /
+
+# ByteDance / TikTok
+User-agent: Bytespider
+Disallow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Disallow: /
+
+# Amazon
+User-agent: Amazonbot
+Disallow: /
+
+# Apple
+User-agent: Applebot-Extended
+Disallow: /
+
+# Miscellaneous AI scrapers
+User-agent: YouBot
+Disallow: /
+User-agent: Diffbot
+Disallow: /
+User-agent: ImagesiftBot
+Disallow: /
+User-agent: Omgilibot
+Disallow: /
+User-agent: Scrapy
+Disallow: /
