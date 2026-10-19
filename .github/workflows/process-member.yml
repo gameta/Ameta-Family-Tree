@@ -1,0 +1,131 @@
+name: Process Member Submission
+
+on:
+  issues:
+    types: [labeled]
+  issue_comment:
+    types: [created]
+
+jobs:
+  # When admin adds 'approved' label, check for conflicts
+  check-and-add:
+    runs-on: ubuntu-latest
+    if: >
+      github.event_name == 'issues' &&
+      github.event.label.name == 'approved' &&
+      contains(github.event.issue.title, '[New Member]')
+    permissions:
+      contents: write
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check for conflicts
+        id: check
+        env:
+          ENCRYPTION_KEY: ${{ secrets.ENCRYPTION_KEY }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: node tools/process-issue.js check
+
+      - name: Handle conflict
+        if: steps.check.outputs.status == 'conflict'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue comment ${{ github.event.issue.number }} --body "${{ steps.check.outputs.message }}"
+          gh issue edit ${{ github.event.issue.number }} --add-label "needs-clarification"
+          gh issue edit ${{ github.event.issue.number }} --remove-label "approved"
+
+      - name: Add member (no conflict)
+        if: steps.check.outputs.status == 'clear'
+        id: add
+        env:
+          ENCRYPTION_KEY: ${{ secrets.ENCRYPTION_KEY }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: node tools/process-issue.js add
+
+      - name: Commit and push
+        if: steps.check.outputs.status == 'clear'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add d7k9x2.enc
+          git commit -m "Add family member: ${{ steps.add.outputs.new_id }}"
+          git push
+
+      - name: Close issue on success
+        if: steps.check.outputs.status == 'clear'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue comment ${{ github.event.issue.number }} --body "${{ steps.add.outputs.message }}"
+          gh issue edit ${{ github.event.issue.number }} --add-label "added"
+          gh issue close ${{ github.event.issue.number }}
+
+      - name: Notify Discord
+        if: steps.check.outputs.status == 'clear' && env.DISCORD_WEBHOOK != ''
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        run: |
+          curl -s -H "Content-Type: application/json" \
+            -d "{\"content\": \"**Member Added** ✅\n${{ steps.add.outputs.message }}\n🔗 ${{ github.event.issue.html_url }}\"}" \
+            "$DISCORD_WEBHOOK"
+
+  # When admin replies "different person" on a conflict issue, force-add
+  resolve-conflict:
+    runs-on: ubuntu-latest
+    if: >
+      github.event_name == 'issue_comment' &&
+      contains(github.event.issue.labels.*.name, 'needs-clarification') &&
+      contains(github.event.issue.title, '[New Member]') &&
+      github.event.issue.user.login != github.event.comment.user.login
+    permissions:
+      contents: write
+      issues: write
+    steps:
+      - name: Check if admin says different person
+        id: decision
+        run: |
+          COMMENT=$(echo "${{ github.event.comment.body }}" | tr '[:upper:]' '[:lower:]')
+          if echo "$COMMENT" | grep -q "different person"; then
+            echo "action=add" >> $GITHUB_OUTPUT
+          elif echo "$COMMENT" | grep -q "same person"; then
+            echo "action=skip" >> $GITHUB_OUTPUT
+          else
+            echo "action=none" >> $GITHUB_OUTPUT
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.decision.outputs.action == 'add'
+
+      - name: Force add member
+        if: steps.decision.outputs.action == 'add'
+        id: add
+        env:
+          ENCRYPTION_KEY: ${{ secrets.ENCRYPTION_KEY }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: node tools/process-issue.js add
+
+      - name: Commit and push
+        if: steps.decision.outputs.action == 'add'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add d7k9x2.enc
+          git commit -m "Add family member (resolved conflict): ${{ steps.add.outputs.new_id }}"
+          git push
+
+      - name: Close issue
+        if: steps.decision.outputs.action == 'add' || steps.decision.outputs.action == 'skip'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ "${{ steps.decision.outputs.action }}" = "add" ]; then
+            gh issue comment ${{ github.event.issue.number }} --body "Conflict resolved — added as a different person.\n${{ steps.add.outputs.message }}"
+            gh issue edit ${{ github.event.issue.number }} --add-label "added"
+          else
+            gh issue comment ${{ github.event.issue.number }} --body "Understood — same person, no new entry needed."
+            gh issue edit ${{ github.event.issue.number }} --add-label "duplicate"
+          fi
+          gh issue edit ${{ github.event.issue.number }} --remove-label "needs-clarification"
+          gh issue close ${{ github.event.issue.number }}
