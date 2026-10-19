@@ -132,6 +132,23 @@ function addPerson(data, fields) {
     }
   }
 
+  // If both father and mother are known, ensure they're linked as spouses
+  if (fields.father && fields.mother) {
+    const fatherId = findPersonByName(data, fields.father);
+    const motherId = findPersonByName(data, fields.mother);
+    if (fatherId && motherId) {
+      const alreadySpouses = data.edges.some(e =>
+        e.type === 'isSpouseOf' &&
+        ((e.source === fatherId && e.target === motherId) ||
+         (e.source === motherId && e.target === fatherId))
+      );
+      if (!alreadySpouses) {
+        data.edges.push({ source: fatherId, type: 'isSpouseOf', target: motherId });
+        linked.push(`Parents linked as spouses: ${fields.father} & ${fields.mother}`);
+      }
+    }
+  }
+
   if (fields.spouse) {
     const spouseGender = node.gender === 'M' ? 'F' : node.gender === 'F' ? 'M' : null;
     const spouse = findOrCreate(data, fields.spouse, { gender: spouseGender });
