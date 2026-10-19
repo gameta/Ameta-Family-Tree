@@ -98,19 +98,37 @@ function addPerson(data, fields) {
 
   data.nodes[newId] = node;
 
+  const linked = [];
+  const notFound = [];
+
   const fatherId = findPersonByName(data, fields.father);
-  if (fatherId) {
-    data.edges.push({ source: fatherId, type: 'isFatherOf', target: newId });
+  if (fields.father) {
+    if (fatherId) {
+      data.edges.push({ source: fatherId, type: 'isFatherOf', target: newId });
+      linked.push(`Father: ${fields.father}`);
+    } else {
+      notFound.push(`Father: ${fields.father}`);
+    }
   }
 
   const motherId = findPersonByName(data, fields.mother);
-  if (motherId) {
-    data.edges.push({ source: motherId, type: 'isMotherOf', target: newId });
+  if (fields.mother) {
+    if (motherId) {
+      data.edges.push({ source: motherId, type: 'isMotherOf', target: newId });
+      linked.push(`Mother: ${fields.mother}`);
+    } else {
+      notFound.push(`Mother: ${fields.mother}`);
+    }
   }
 
   const spouseId = findPersonByName(data, fields.spouse);
-  if (spouseId) {
-    data.edges.push({ source: newId, type: 'isSpouseOf', target: spouseId });
+  if (fields.spouse) {
+    if (spouseId) {
+      data.edges.push({ source: newId, type: 'isSpouseOf', target: spouseId });
+      linked.push(`Spouse: ${fields.spouse}`);
+    } else {
+      notFound.push(`Spouse: ${fields.spouse}`);
+    }
   }
 
   if (fields.children) {
@@ -120,11 +138,14 @@ function addPerson(data, fields) {
       if (childId) {
         const edgeType = node.gender === 'M' ? 'isFatherOf' : 'isMotherOf';
         data.edges.push({ source: newId, type: edgeType, target: childId });
+        linked.push(`Child: ${childName}`);
+      } else {
+        notFound.push(`Child: ${childName}`);
       }
     }
   }
 
-  return { newId, node, edgesAdded: data.edges.length };
+  return { newId, node, linked, notFound };
 }
 
 // Main
@@ -168,13 +189,18 @@ if (mode === 'check') {
 if (mode === 'add') {
   const result = addPerson(data, fields);
   encrypt(password, data);
-  const summary = `Added **${fields.name}** as ${result.newId}`;
-  const parentInfo = [];
-  if (fields.father) parentInfo.push(`Father: ${fields.father}`);
-  if (fields.mother) parentInfo.push(`Mother: ${fields.mother}`);
-  if (fields.spouse) parentInfo.push(`Spouse: ${fields.spouse}`);
-  const msg = summary + (parentInfo.length ? `\n${parentInfo.join(', ')}` : '');
+  let msg = `Added **${fields.name}** as \`${result.newId}\``;
+  if (result.linked.length > 0) {
+    msg += `\n\n**Linked to existing members:**\n${result.linked.map(l => '- ✅ ' + l).join('\n')}`;
+  }
+  if (result.notFound.length > 0) {
+    msg += `\n\n**⚠️ Not found in tree (no edge created):**\n${result.notFound.map(l => '- ❌ ' + l).join('\n')}`;
+    msg += `\n\n_These people need to be added separately, then linked manually._`;
+  }
   console.log(`::set-output name=status::added`);
   console.log(`::set-output name=message::${msg.replace(/\n/g, '%0A')}`);
   console.log(`::set-output name=new_id::${result.newId}`);
+  if (result.notFound.length > 0) {
+    console.log(`::set-output name=warnings::true`);
+  }
 }
