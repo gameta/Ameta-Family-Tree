@@ -191,21 +191,62 @@ function logVisitor() {
     }).catch(() => {});
 }
 
-function checkGatePassword() {
+async function deriveKey(password, salt) {
+  const enc = new TextEncoder();
+  const keyMaterial = await crypto.subtle.importKey('raw', enc.encode(password), 'PBKDF2', false, ['deriveKey']);
+  return crypto.subtle.deriveKey(
+    { name: 'PBKDF2', salt, iterations: 100000, hash: 'SHA-256' },
+    keyMaterial,
+    { name: 'AES-GCM', length: 256 },
+    false,
+    ['decrypt']
+  );
+}
+
+async function decryptData(password) {
+  const resp = await fetch('d7k9x2.enc');
+  const b64 = await resp.text();
+  const buf = Uint8Array.from(atob(b64), c => c.charCodeAt(0));
+  const salt = buf.slice(0, 16);
+  const iv = buf.slice(16, 28);
+  const tag = buf.slice(28, 44);
+  const ciphertext = buf.slice(44);
+  const combined = new Uint8Array(ciphertext.length + tag.length);
+  combined.set(ciphertext);
+  combined.set(tag, ciphertext.length);
+  const key = await deriveKey(password, salt);
+  const plain = await crypto.subtle.decrypt({ name: 'AES-GCM', iv }, key, combined);
+  return JSON.parse(new TextDecoder().decode(plain));
+}
+
+async function checkGatePassword() {
   const input = document.getElementById('gate-password').value;
-  const hash = Array.from(new TextEncoder().encode(input)).reduce((h, b) => ((h << 5) - h + b) | 0, 0).toString(16);
-  if (hash === '6874b0a7') {
+  const errorEl = document.getElementById('gate-error');
+  errorEl.style.display = 'none';
+  try {
+    window._decryptedData = await decryptData(input);
     document.getElementById('password-gate').style.display = 'none';
-    sessionStorage.setItem('fke-auth', '1');
+    sessionStorage.setItem('fke-auth-key', input);
     logVisitor();
-  } else {
-    document.getElementById('gate-error').style.display = 'block';
+    init();
+  } catch (e) {
+    errorEl.style.display = 'block';
   }
 }
-if (sessionStorage.getItem('fke-auth') === '1') {
-  document.getElementById('password-gate').style.display = 'none';
-  logVisitor();
-}
+
+(async function autoLogin() {
+  const saved = sessionStorage.getItem('fke-auth-key');
+  if (saved) {
+    try {
+      window._decryptedData = await decryptData(saved);
+      document.getElementById('password-gate').style.display = 'none';
+      logVisitor();
+      init();
+    } catch (e) {
+      sessionStorage.removeItem('fke-auth-key');
+    }
+  }
+})();
 </script>
 
 <div id="topbar">
@@ -663,8 +704,7 @@ class FamilyLayout {
 
 // Load data and initialize
 async function init() {
-  const response = await fetch('d7k9x2.json');
-  const data = await response.json();
+  const data = window._decryptedData;
   graph = new FamilyGraph(data);
   resolver = new KinshipResolver(KINSHIP_RULES_HI);
 
@@ -1270,8 +1310,7 @@ function resetZoom() {
   svg.setAttribute('viewBox', `${viewBox.x} ${viewBox.y} ${viewBox.w} ${viewBox.h}`);
 }
 
-// Initialize
-init();
+// ZoomPan initializes immediately; data init happens after password
 initZoomPan();
 </script>
 </body>
