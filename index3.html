@@ -194,7 +194,7 @@ function logVisitor() {
 function checkGatePassword() {
   const input = document.getElementById('gate-password').value;
   const hash = Array.from(new TextEncoder().encode(input)).reduce((h, b) => ((h << 5) - h + b) | 0, 0).toString(16);
-  if (hash === '75bd787e') {
+  if (hash === '6874b0a7') {
     document.getElementById('password-gate').style.display = 'none';
     sessionStorage.setItem('fke-auth', '1');
     logVisitor();
